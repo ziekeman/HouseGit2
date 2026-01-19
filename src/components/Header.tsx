@@ -13,7 +13,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 lg:px-12 lg:py-6">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
-        <img src={logo} alt="House of Engagement" className="h-14 w-auto" />
+        <img src={logo} alt="House of Engagement" className="h-20 w-auto" />
 
         {/* Navigation Pill */}
         <nav className="hidden md:flex items-center bg-nav rounded-full px-2 py-2 shadow-sm">
