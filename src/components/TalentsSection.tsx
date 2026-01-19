@@ -5,15 +5,17 @@ import talentJordan from "@/assets/talents/talent-jordan.jpg";
 import talentNimo from "@/assets/talents/talent-nimo.jpg";
 import talentPape from "@/assets/talents/talent-pape.jpg";
 import talentGynamo from "@/assets/talents/talent-gynamo.png";
+import talentTabitha from "@/assets/talents/talent-tabitha.png";
 
 const talents = [
   { id: 1, name: "FRAASIE", image: talent1 },
   { id: 2, name: "NIMO", image: talentNimo },
-  { id: 3, name: "ASHI", image: talent3 },
-  { id: 4, name: "GYNAMO", image: talentGynamo },
-  { id: 5, name: "JORDAN KNOWS", image: talentJordan },
-  { id: 6, name: "SIGOURNEY K", image: talent2 },
-  { id: 7, name: "P.APE", image: talentPape },
+  { id: 3, name: "TABITHA", image: talentTabitha },
+  { id: 4, name: "ASHI", image: talent3 },
+  { id: 5, name: "GYNAMO", image: talentGynamo },
+  { id: 6, name: "JORDAN KNOWS", image: talentJordan },
+  { id: 7, name: "SIGOURNEY K", image: talent2 },
+  { id: 8, name: "P.APE", image: talentPape },
 ];
 
 const TalentsSection = () => {
