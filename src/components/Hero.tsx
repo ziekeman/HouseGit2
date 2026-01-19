@@ -75,13 +75,6 @@ const Hero = () => {
                 <span className="text-muted-foreground text-xs font-body text-center px-2">Sign Image</span>
               </div>
             </div>
-
-            {/* Small Detail Image - Newspaper */}
-            <div className="absolute -top-4 -right-4 lg:top-12 lg:-right-8 w-32 lg:w-40 aspect-[4/5] rounded-xl overflow-hidden shadow-lg border-4 border-background">
-              <div className="w-full h-full bg-muted flex items-center justify-center">
-                <span className="text-muted-foreground text-xs font-body text-center px-2">Detail Image</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
