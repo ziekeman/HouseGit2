@@ -28,7 +28,7 @@ const TalentsSection = () => {
         <h2 className="font-display text-5xl lg:text-6xl font-bold italic text-primary mb-8 uppercase text-center">
           Meet Our Talents
         </h2>
-        <p className="text-muted-foreground text-lg mb-12 max-w-4xl font-body text-center mx-auto">
+        <p className="text-foreground text-lg mb-12 max-w-4xl font-body text-center mx-auto">
           Bij House of Engagement staat talent altijd voorop. Wij geloven dat sterke samenwerkingen beginnen bij de juiste match, daarom zetten we identiteit, persoonlijkheid en culturele relevantie van creators en artiesten centraal.
         </p>
         
