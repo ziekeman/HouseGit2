@@ -35,12 +35,12 @@ const AboutSection = () => {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="bg-background rounded-3xl p-6 text-center shadow-lg border-4 border-white"
+                className="bg-[#F0787A] rounded-3xl p-6 text-center shadow-lg border-4 border-white"
               >
-                <div className="font-display text-4xl lg:text-5xl font-black text-secondary mb-2">
+                <div className="font-display text-4xl lg:text-5xl font-black text-[#262626] mb-2">
                   {stat.value}
                 </div>
-                <div className="text-sm lg:text-base text-primary/70 font-medium">
+                <div className="font-display text-sm lg:text-base text-[#262626]/70 font-medium">
                   {stat.label}
                 </div>
               </div>
