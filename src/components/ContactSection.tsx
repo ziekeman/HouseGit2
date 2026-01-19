@@ -1,3 +1,5 @@
+import logoWhite from "@/assets/logo-white.png";
+
 const ContactSection = () => {
   return (
     <section id="contact" className="py-12 px-6 lg:px-12 bg-foreground">
@@ -6,19 +8,8 @@ const ContactSection = () => {
         <div className="pt-10 border-t border-background/10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
             {/* Column 1 - Logo */}
-            <div className="flex flex-col items-start leading-none text-background">
-              <span className="text-[10px] font-body font-medium tracking-[0.2em] uppercase">
-                HOUSE OF
-              </span>
-              <div className="flex items-center gap-1">
-                <span className="text-sm font-body font-semibold tracking-wide uppercase">
-                  ENGAGE
-                </span>
-                <span className="text-accent text-lg">♥</span>
-                <span className="text-sm font-body font-semibold tracking-wide uppercase">
-                  ENT
-                </span>
-              </div>
+            <div className="flex flex-col items-start">
+              <img src={logoWhite} alt="House of Engagement" className="h-12 w-auto" />
             </div>
 
             {/* Column 2 - Description */}
