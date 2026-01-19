@@ -25,18 +25,27 @@ const CasesSection = () => {
         {/* Cases grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Case 1 - Nimo & Guno First Dates */}
-          <div className="aspect-[9/16] rounded-2xl overflow-hidden">
+          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden">
             <img 
               src={case1Gif} 
               alt="Nimo & Guno - First Dates" 
               className="w-full h-full object-cover"
             />
+            <span className="absolute bottom-4 left-4 bg-foreground text-secondary font-display font-bold italic text-sm px-4 py-2 rounded-full uppercase">
+              Campaigne
+            </span>
           </div>
           
           {/* Placeholder cases */}
-          {[2, 3].map((i) => (
-            <div key={i} className="aspect-[9/16] rounded-2xl bg-muted flex items-center justify-center">
-              <span className="text-muted-foreground text-sm font-body">Case {i}</span>
+          {[
+            { id: 2, badge: "Content" },
+            { id: 3, badge: "Activation" }
+          ].map((item) => (
+            <div key={item.id} className="relative aspect-[9/16] rounded-2xl bg-muted flex items-center justify-center">
+              <span className="text-muted-foreground text-sm font-body">Case {item.id}</span>
+              <span className="absolute bottom-4 left-4 bg-foreground text-secondary font-display font-bold italic text-sm px-4 py-2 rounded-full uppercase">
+                {item.badge}
+              </span>
             </div>
           ))}
         </div>
