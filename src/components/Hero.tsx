@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import houseOfEngagementSign from "@/assets/house-of-engagement-sign.png";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -71,9 +72,11 @@ const Hero = () => {
 
             {/* Overlay Image - House of Engagement sign */}
             <div className="absolute -bottom-4 -left-4 lg:bottom-8 lg:-left-8 w-48 lg:w-56 aspect-square rounded-2xl overflow-hidden shadow-xl border-4 border-background">
-              <div className="w-full h-full bg-muted flex items-center justify-center">
-                <span className="text-muted-foreground text-xs font-body text-center px-2">Sign Image</span>
-              </div>
+              <img 
+                src={houseOfEngagementSign} 
+                alt="House of Engagement sign" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
