@@ -25,7 +25,7 @@ const CasesSection = () => {
         {/* Cases grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Case 1 - Nimo & Guno First Dates */}
-          <div className="aspect-video rounded-2xl overflow-hidden">
+          <div className="aspect-[9/16] rounded-2xl overflow-hidden">
             <img 
               src={case1Gif} 
               alt="Nimo & Guno - First Dates" 
