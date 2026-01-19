@@ -16,9 +16,8 @@ const Hero = () => {
           {/* Left Content */}
           <div className="flex flex-col justify-center lg:pt-8">
             {/* Main Headline */}
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold italic text-primary leading-[0.9] mb-8 xl:text-6xl">FROM TALENT
-TO
-IMPACT<br />
+            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold italic text-primary leading-[0.9] mb-8 xl:text-6xl">FROM TALENT TO IMPACT
+            <br />
               TALENT
               <br />
               TO
