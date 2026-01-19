@@ -25,7 +25,7 @@ const TalentsSection = () => {
   return (
     <section id="talents" className="py-24 px-6 lg:px-12 bg-muted/50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="font-display text-4xl lg:text-6xl font-bold italic text-primary mb-8 uppercase text-center">
+        <h2 className="font-display text-5xl lg:text-6xl font-bold italic text-primary mb-8 uppercase text-center">
           Meet Our Talents
         </h2>
         <p className="text-muted-foreground text-lg mb-12 max-w-4xl font-body text-center mx-auto">
