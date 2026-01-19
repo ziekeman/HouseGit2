@@ -42,7 +42,7 @@ const CasesSection = () => {
               </h3>
             </div>
             <span className="absolute bottom-4 left-4 bg-foreground text-secondary font-display font-bold italic text-sm px-4 py-2 rounded-full uppercase">
-              Campaigne
+              Campagne
             </span>
           </div>
           
