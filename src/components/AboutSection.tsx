@@ -51,30 +51,6 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Values */}
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl">🤝</span>
-            </div>
-            <h4 className="font-display text-xl font-bold text-primary mb-2">Authenticiteit</h4>
-            <p className="text-primary/70">Echte connecties, geen gekunstelde samenwerkingen</p>
-          </div>
-          <div className="text-center">
-            <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl">🚀</span>
-            </div>
-            <h4 className="font-display text-xl font-bold text-primary mb-2">Innovatie</h4>
-            <p className="text-primary/70">Altijd voorop in de laatste trends en platforms</p>
-          </div>
-          <div className="text-center">
-            <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl">💡</span>
-            </div>
-            <h4 className="font-display text-xl font-bold text-primary mb-2">Creativiteit</h4>
-            <p className="text-primary/70">Unieke concepten die impact maken</p>
-          </div>
-        </div>
       </div>
     </section>
   );
