@@ -36,7 +36,7 @@ const CasesSection = () => {
             {/* Title text */}
             <div className="absolute inset-0 flex items-center justify-center px-4">
               <h3 className="font-display font-bold italic text-2xl lg:text-3xl text-secondary uppercase leading-tight text-center">
-                NIMO X<br />MERCEDES<br />GOMES
+                NIMO X<br />FIRST DATES
               </h3>
             </div>
             <span className="absolute bottom-4 left-4 bg-foreground text-secondary font-display font-bold italic text-sm px-4 py-2 rounded-full uppercase">
