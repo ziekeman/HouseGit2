@@ -73,8 +73,8 @@ const Hero = () => {
             </button>
 
             {/* Trusted By */}
-            <div className="mt-6 lg:mt-10 scale-[0.85] lg:scale-100 origin-center lg:origin-left">
-              <p className="text-sm font-display font-bold italic tracking-wider text-primary mb-4 lg:mb-6 text-center lg:text-left">
+            <div className="mt-6 lg:mt-10 scale-[0.85] lg:scale-100 origin-center lg:origin-left flex flex-col items-center lg:items-start">
+              <p className="text-sm font-display font-bold italic tracking-wider text-primary mb-4 lg:mb-6">
                 TRUSTED BY
               </p>
               {/* Logo Carousel with fade edges */}
