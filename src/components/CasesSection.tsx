@@ -35,7 +35,7 @@ const CasesSection = () => {
           
           {/* Placeholder cases */}
           {[2, 3].map((i) => (
-            <div key={i} className="aspect-video rounded-2xl bg-muted flex items-center justify-center">
+            <div key={i} className="aspect-[9/16] rounded-2xl bg-muted flex items-center justify-center">
               <span className="text-muted-foreground text-sm font-body">Case {i}</span>
             </div>
           ))}
