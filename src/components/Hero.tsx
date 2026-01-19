@@ -55,7 +55,7 @@ const Hero = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-foreground/80 text-sm lg:text-lg leading-relaxed max-w-md mb-6 font-body">
+            <p className="text-foreground text-sm lg:text-lg leading-relaxed max-w-md mb-6 font-body px-[5px] lg:px-0">
               Bij House of Engagement bouwen we aan langdurige partnerships tussen merken en makers. 
               Met een divers netwerk van creators, artiesten, content, muziek en community, 
               zorgen we voor échte impact.
