@@ -48,7 +48,7 @@ const Hero = () => {
           {/* Text Content */}
           <div className="order-first lg:order-first flex flex-col justify-center lg:pt-16">
             {/* Main Headline */}
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold italic text-primary leading-[0.9] mb-2">
+            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold italic text-primary leading-[0.9] mb-2">
               <span className="block">FROM</span>
               <span className="block">TALENT</span>
               <span className="block">TO IMPACT</span>
