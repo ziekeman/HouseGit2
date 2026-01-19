@@ -35,7 +35,7 @@ const Hero = () => {
           {/* Photo Collage - Shows first on mobile */}
           <div className="order-last lg:order-last relative w-full lg:h-[700px] flex items-center justify-center">
             {/* Main Image - Woman with balloons */}
-            <div className="relative w-full aspect-[4/5] lg:aspect-[5/6.1] lg:w-[520px] rounded-tl-[4rem] lg:rounded-tl-[6rem] rounded-tr-none rounded-br-none rounded-bl-none overflow-hidden border-4 lg:border-[6px] border-white shadow-lg">
+            <div className="relative w-[85%] lg:w-[520px] aspect-[4/5] lg:aspect-[5/6.1] rounded-tl-[4rem] lg:rounded-tl-[6rem] rounded-tr-none rounded-br-none rounded-bl-none overflow-hidden border-4 lg:border-[6px] border-white shadow-lg">
               <img src={heroTabitha} alt="Tabitha with balloons" className="w-full h-full object-cover" />
             </div>
 
