@@ -54,10 +54,6 @@ const TalentsSection = () => {
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent p-4 pt-16 text-right">
                   <span className="font-display text-secondary font-bold italic text-2xl md:text-3xl">{talent.name}</span>
                 </div>
-                {/* Fade overlay for 5th item on mobile */}
-                {isFadedPreview && (
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent md:hidden pointer-events-none" />
-                )}
               </div>
             );
           })}
@@ -68,7 +64,7 @@ const TalentsSection = () => {
           <div className="flex justify-center mt-6 md:hidden">
             <button
               onClick={() => setShowAll(true)}
-              className="px-6 py-2 text-sm font-medium text-secondary bg-foreground border border-foreground rounded-full hover:opacity-90 transition-colors"
+              className="px-8 py-3 text-base font-medium text-secondary bg-foreground border border-foreground rounded-full hover:opacity-90 transition-colors"
             >
               Show more
             </button>
