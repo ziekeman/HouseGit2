@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import houseOfEngagementSign from "@/assets/house-of-engagement-sign.png";
+import heroTabitha from "@/assets/hero-tabitha.png";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -63,11 +64,11 @@ const Hero = () => {
           <div className="relative lg:h-[700px] flex items-center justify-center">
             {/* Main Image - Woman with balloons */}
             <div className="relative w-full max-w-md lg:max-w-none lg:w-[380px] aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
-              {/* Placeholder for main image */}
-              <div className="w-full h-full bg-muted flex items-center justify-center">
-                <span className="text-muted-foreground text-sm font-body">Main Image</span>
-              </div>
+              <img 
+                src={heroTabitha} 
+                alt="Tabitha with balloons" 
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Overlay Image - House of Engagement sign */}
