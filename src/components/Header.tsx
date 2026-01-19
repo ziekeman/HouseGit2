@@ -21,10 +21,14 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef<HTMLElement>(null);
   const buttonRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const isScrollingRef = useRef(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
+        // Don't update if user just clicked a nav item
+        if (isScrollingRef.current) return;
+        
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
@@ -59,12 +63,19 @@ const Header = () => {
   }, [activeSection]);
 
   const scrollToSection = (id: string) => {
+    isScrollingRef.current = true;
     setActiveSection(id);
+    
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
     setIsOpen(false);
+    
+    // Unlock after scroll animation completes
+    setTimeout(() => {
+      isScrollingRef.current = false;
+    }, 800);
   };
 
   return (
