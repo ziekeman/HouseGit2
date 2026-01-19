@@ -82,7 +82,7 @@ const Header = () => {
               key={id}
               ref={(el) => (buttonRefs.current[index] = el)}
               onClick={() => scrollToSection(id)}
-              className={`relative z-10 px-6 py-2.5 rounded-full uppercase font-display text-sm tracking-wide transition-colors duration-300 ${
+              className={`relative z-10 px-6 pt-3 pb-2 rounded-full uppercase font-display text-sm tracking-wide transition-colors duration-300 flex items-center justify-center ${
                 activeSection === id
                   ? "text-primary"
                   : "text-muted-foreground hover:text-primary"
