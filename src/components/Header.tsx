@@ -3,9 +3,10 @@ import { useState, useEffect, useRef } from "react";
 import logo from "@/assets/logo.png";
 
 const navItems = [
-  { id: "about", label: "ABOUT" },
-  { id: "talents", label: "TALENTS" },
+  { id: "hero", label: "HOME" },
+  { id: "talents", label: "TALENT" },
   { id: "cases", label: "CASES" },
+  { id: "about", label: "ABOUT" },
 ];
 
 const Header = () => {
