@@ -56,11 +56,11 @@ const Hero = () => {
 
             {/* Trusted By */}
             <div className="mt-16">
-              <p className="text-xs font-medium tracking-wider text-muted-foreground mb-6 font-body">
+              <p className="text-sm font-display font-bold italic tracking-wider text-primary mb-6">
                 TRUSTED BY
               </p>
               {/* Logo Carousel - shows 3 logos at a time */}
-              <div className="overflow-hidden max-w-[320px]">
+              <div className="overflow-hidden max-w-[420px]">
                 <div className="flex animate-scroll-left">
                   {/* First set of logos */}
                   {logos.map((logo, i) => (
@@ -68,7 +68,7 @@ const Hero = () => {
                       key={i}
                       src={logo.src}
                       alt={logo.alt}
-                      className="h-8 w-auto object-contain mx-6 grayscale brightness-0 opacity-70 flex-shrink-0"
+                      className="h-12 w-auto object-contain mx-8 grayscale brightness-0 flex-shrink-0"
                     />
                   ))}
                   {/* Duplicate for seamless loop */}
@@ -77,7 +77,7 @@ const Hero = () => {
                       key={`dup-${i}`}
                       src={logo.src}
                       alt={logo.alt}
-                      className="h-8 w-auto object-contain mx-6 grayscale brightness-0 opacity-70 flex-shrink-0"
+                      className="h-12 w-auto object-contain mx-8 grayscale brightness-0 flex-shrink-0"
                     />
                   ))}
                 </div>
