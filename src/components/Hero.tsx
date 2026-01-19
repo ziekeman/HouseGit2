@@ -59,27 +59,34 @@ const Hero = () => {
               <p className="text-sm font-display font-bold italic tracking-wider text-primary mb-6">
                 TRUSTED BY
               </p>
-              {/* Logo Carousel - shows 3 logos at a time */}
-              <div className="overflow-hidden max-w-[420px]">
-                <div className="flex animate-scroll-left">
-                  {/* First set of logos */}
-                  {logos.map((logo, i) => (
-                    <img
-                      key={i}
-                      src={logo.src}
-                      alt={logo.alt}
-                      className="h-12 w-auto object-contain mx-8 grayscale brightness-0 flex-shrink-0"
-                    />
-                  ))}
-                  {/* Duplicate for seamless loop */}
-                  {logos.map((logo, i) => (
-                    <img
-                      key={`dup-${i}`}
-                      src={logo.src}
-                      alt={logo.alt}
-                      className="h-12 w-auto object-contain mx-8 grayscale brightness-0 flex-shrink-0"
-                    />
-                  ))}
+              {/* Logo Carousel with fade edges */}
+              <div className="relative max-w-[420px]">
+                {/* Left fade gradient */}
+                <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+                {/* Right fade gradient */}
+                <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+                
+                <div className="overflow-hidden">
+                  <div className="flex animate-scroll-left">
+                    {/* First set of logos */}
+                    {logos.map((logo, i) => (
+                      <img
+                        key={i}
+                        src={logo.src}
+                        alt={logo.alt}
+                        className="h-12 w-auto object-contain mx-8 grayscale brightness-0 flex-shrink-0"
+                      />
+                    ))}
+                    {/* Duplicate for seamless loop */}
+                    {logos.map((logo, i) => (
+                      <img
+                        key={`dup-${i}`}
+                        src={logo.src}
+                        alt={logo.alt}
+                        className="h-12 w-auto object-contain mx-8 grayscale brightness-0 flex-shrink-0"
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

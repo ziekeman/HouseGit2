@@ -150,5 +150,6 @@
 }
 
 .animate-scroll-left {
-  animation: scroll-left 15s linear infinite;
+  animation: scroll-left 20s linear infinite;
+  will-change: transform;
 }
