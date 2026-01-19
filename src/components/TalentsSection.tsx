@@ -56,7 +56,7 @@ const TalentsSection = () => {
                 </div>
                 {/* Fade overlay for 5th item on mobile */}
                 {isFadedPreview && (
-                  <div className="absolute inset-0 bg-gradient-to-t from-muted/100 via-muted/80 to-transparent md:hidden pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent md:hidden pointer-events-none" />
                 )}
               </div>
             );
@@ -68,7 +68,7 @@ const TalentsSection = () => {
           <div className="flex justify-center mt-6 md:hidden">
             <button
               onClick={() => setShowAll(true)}
-              className="px-6 py-2 text-sm font-medium text-[#8B7355] border border-[#8B7355]/30 rounded-full hover:bg-[#8B7355]/10 transition-colors"
+              className="px-6 py-2 text-sm font-medium text-secondary bg-foreground border border-foreground rounded-full hover:opacity-90 transition-colors"
             >
               Show more
             </button>
