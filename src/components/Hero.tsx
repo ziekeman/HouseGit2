@@ -1,23 +1,21 @@
 import { ArrowRight } from "lucide-react";
-
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById("contact");
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
     }
   };
-
-  return (
-    <section id="about" className="min-h-screen pt-28 pb-16 px-6 lg:px-12">
+  return <section id="about" className="min-h-screen pt-28 pb-16 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-start">
           {/* Left Content */}
           <div className="flex flex-col justify-center lg:pt-8">
             {/* Main Headline */}
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold italic text-primary leading-[0.9] mb-8">
-              FROM
-              <br />
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold italic text-primary leading-[0.9] mb-8 font-sans xl:text-7xl">FROM TALENT
+TO IMPACT<br />
               TALENT
               <br />
               TO
@@ -33,10 +31,7 @@ const Hero = () => {
             </p>
 
             {/* CTA Button */}
-            <button
-              onClick={scrollToContact}
-              className="inline-flex items-center gap-3 bg-foreground text-background px-6 py-4 rounded-full font-medium text-sm w-fit hover:opacity-90 transition-opacity group"
-            >
+            <button onClick={scrollToContact} className="inline-flex items-center gap-3 bg-foreground text-background px-6 py-4 rounded-full font-medium text-sm w-fit hover:opacity-90 transition-opacity group">
               GET IN TOUCH
               <span className="flex items-center justify-center w-8 h-8 bg-accent rounded-full">
                 <ArrowRight className="w-4 h-4 text-accent-foreground group-hover:translate-x-0.5 transition-transform" />
@@ -78,8 +73,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
