@@ -1,4 +1,5 @@
 import case1Gif from "@/assets/cases/case-1.gif";
+import case2Gif from "@/assets/cases/case-2.gif";
 import case3Gif from "@/assets/cases/case-3.gif";
 
 const CasesSection = () => {
@@ -45,18 +46,23 @@ const CasesSection = () => {
             </span>
           </div>
           
-          {/* Case 2 - Placeholder */}
-          <div className="relative aspect-[9/16] rounded-2xl bg-muted flex items-center justify-center overflow-hidden">
+          {/* Case 2 - Fraasie X New York Pizza */}
+          <div className="relative aspect-[9/16] rounded-2xl overflow-hidden">
+            <img 
+              src={case2Gif} 
+              alt="Fraasie X New York Pizza" 
+              className="w-full h-full object-cover"
+            />
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent" />
             {/* Title text */}
             <div className="absolute inset-0 flex items-center justify-center px-4">
-              <h3 className="font-display font-bold italic text-2xl lg:text-3xl text-secondary uppercase leading-tight whitespace-pre-line text-center">
-                TALENT X{"\n"}BRAND
+              <h3 className="font-display font-bold italic text-2xl lg:text-3xl text-secondary uppercase leading-tight text-center">
+                FRAASIE X<br />NEW YORK PIZZA
               </h3>
             </div>
             <span className="absolute bottom-4 left-4 bg-foreground text-secondary font-display font-bold italic text-sm px-4 py-2 rounded-full uppercase">
-              Content
+              Muziekproductie
             </span>
           </div>
           
