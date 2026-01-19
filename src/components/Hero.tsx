@@ -47,7 +47,7 @@ const Hero = () => {
             </p>
 
             {/* CTA Button */}
-            <button onClick={scrollToContact} className="inline-flex items-center gap-3 bg-foreground text-background px-6 py-4 rounded-full font-medium text-sm w-fit hover:opacity-90 transition-opacity group">
+            <button onClick={scrollToContact} className="inline-flex items-center gap-3 bg-foreground text-background px-6 py-4 rounded-full font-display font-medium text-sm w-fit hover:opacity-90 transition-opacity group">
               GET IN TOUCH
               <span className="flex items-center justify-center w-8 h-8 bg-accent rounded-full">
                 <ArrowRight className="w-4 h-4 text-accent-foreground group-hover:translate-x-0.5 transition-transform" />
