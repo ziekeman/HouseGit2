@@ -59,6 +59,7 @@ const Header = () => {
   }, [activeSection]);
 
   const scrollToSection = (id: string) => {
+    setActiveSection(id);
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
