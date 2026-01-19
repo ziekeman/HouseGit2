@@ -55,7 +55,7 @@ const Hero = () => {
             </button>
 
             {/* Trusted By */}
-            <div className="mt-16">
+            <div className="mt-10">
               <p className="text-sm font-display font-bold italic tracking-wider text-primary mb-6">
                 TRUSTED BY
               </p>
@@ -74,7 +74,7 @@ const Hero = () => {
                         key={i}
                         src={logo.src}
                         alt={logo.alt}
-                        className="h-12 w-auto object-contain mx-3 grayscale brightness-0 flex-shrink-0"
+                        className="h-14 w-auto object-contain mx-3 grayscale brightness-0 flex-shrink-0"
                       />
                     ))}
                     {/* Duplicate for seamless loop */}
@@ -83,7 +83,7 @@ const Hero = () => {
                         key={`dup-${i}`}
                         src={logo.src}
                         alt={logo.alt}
-                        className="h-12 w-auto object-contain mx-3 grayscale brightness-0 flex-shrink-0"
+                        className="h-14 w-auto object-contain mx-3 grayscale brightness-0 flex-shrink-0"
                       />
                     ))}
                   </div>
