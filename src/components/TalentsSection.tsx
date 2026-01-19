@@ -7,10 +7,10 @@ import talentPape from "@/assets/talents/talent-pape.jpg";
 
 const talents = [
   { id: 1, name: "FRAASIE", image: talent1 },
-  { id: 2, name: "SIGOURNEY K", image: talent2 },
+  { id: 2, name: "NIMO", image: talentNimo },
   { id: 3, name: "ASHI", image: talent3 },
   { id: 4, name: "JORDAN KNOWS", image: talentJordan },
-  { id: 5, name: "NIMO", image: talentNimo },
+  { id: 5, name: "SIGOURNEY K", image: talent2 },
   { id: 6, name: "P.APE", image: talentPape },
 ];
 
