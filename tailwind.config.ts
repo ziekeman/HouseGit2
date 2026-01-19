@@ -55,6 +55,9 @@ export default {
           DEFAULT: "hsl(var(--nav-bg))",
           active: "hsl(var(--nav-active))",
         },
+        highlight: {
+          DEFAULT: "hsl(var(--highlight))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

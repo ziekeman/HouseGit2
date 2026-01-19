@@ -8,36 +8,41 @@
 @layer base {
   :root {
     /* House of Engagement Brand Colors */
-    --background: 48 14% 95%; /* Light cream/gray #F5F5F3 */
+    /* Background: #DBDADA */
+    --background: 0 0% 86%;
     --foreground: 0 0% 15%;
 
-    --card: 48 14% 95%;
+    /* Card slightly lighter for contrast */
+    --card: 0 0% 92%;
     --card-foreground: 0 0% 15%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 15%;
 
-    /* Primary: Dark maroon/red for headlines */
-    --primary: 350 45% 25%;
+    /* Primary: Brown #722D26 for headlines */
+    --primary: 4 49% 30%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary: Lime/yellow green for CTAs */
-    --secondary: 72 100% 50%;
+    /* Secondary: Green #D6ED3F for CTAs */
+    --secondary: 69 82% 59%;
     --secondary-foreground: 0 0% 10%;
 
-    --muted: 48 10% 90%;
+    --muted: 0 0% 80%;
     --muted-foreground: 0 0% 40%;
 
-    /* Accent: Lime green */
-    --accent: 72 100% 50%;
+    /* Accent: Green #D6ED3F */
+    --accent: 69 82% 59%;
     --accent-foreground: 0 0% 10%;
+
+    /* Highlight: Pink #F0787A */
+    --highlight: 359 78% 70%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 48 10% 85%;
-    --input: 48 10% 85%;
-    --ring: 350 45% 25%;
+    --border: 0 0% 80%;
+    --input: 0 0% 80%;
+    --ring: 4 49% 30%;
 
     --radius: 9999px;
 
