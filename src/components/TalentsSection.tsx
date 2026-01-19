@@ -6,12 +6,12 @@ import talentNimo from "@/assets/talents/talent-nimo.jpg";
 import talentPape from "@/assets/talents/talent-pape.jpg";
 
 const talents = [
-  { id: 1, name: "Talent Name", image: talent1 },
-  { id: 2, name: "Talent Name", image: talent2 },
-  { id: 3, name: "Talent Name", image: talent3 },
-  { id: 4, name: "Talent Name", image: talentJordan },
-  { id: 5, name: "Talent Name", image: talentNimo },
-  { id: 6, name: "Talent Name", image: talentPape },
+  { id: 1, name: "ASHI", image: talent1 },
+  { id: 2, name: "MAYA", image: talent2 },
+  { id: 3, name: "DEMI", image: talent3 },
+  { id: 4, name: "JORDAN", image: talentJordan },
+  { id: 5, name: "NIMO", image: talentNimo },
+  { id: 6, name: "PAPE", image: talentPape },
 ];
 
 const TalentsSection = () => {
