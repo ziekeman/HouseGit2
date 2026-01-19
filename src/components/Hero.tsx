@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-start">
           {/* Left Content */}
-          <div className="flex flex-col justify-center lg:pt-8">
+          <div className="flex flex-col justify-center lg:pt-16">
             {/* Main Headline */}
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold italic text-primary leading-[0.9] mb-2 xl:text-7xl">
               <span className="block">FROM</span>
