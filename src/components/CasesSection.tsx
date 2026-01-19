@@ -1,3 +1,5 @@
+import case1Gif from "@/assets/cases/case-1.gif";
+
 const CasesSection = () => {
   return (
     <section id="cases" className="py-24 px-6 lg:px-12">
@@ -20,9 +22,19 @@ const CasesSection = () => {
           Bij House of Engagement staat talent altijd voorop. Wij geloven dat sterke samenwerkingen beginnen bij de juiste match, daarom zetten we identiteit, persoonlijkheid en culturele relevantie van creators en artiesten centraal.
         </p>
         
-        {/* Placeholder for cases grid */}
+        {/* Cases grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[1, 2, 3].map((i) => (
+          {/* Case 1 - Nimo & Guno First Dates */}
+          <div className="aspect-video rounded-2xl overflow-hidden">
+            <img 
+              src={case1Gif} 
+              alt="Nimo & Guno - First Dates" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          
+          {/* Placeholder cases */}
+          {[2, 3].map((i) => (
             <div key={i} className="aspect-video rounded-2xl bg-muted flex items-center justify-center">
               <span className="text-muted-foreground text-sm font-body">Case {i}</span>
             </div>
