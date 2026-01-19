@@ -18,14 +18,14 @@ const AboutSection = () => {
         {/* Content */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
           {/* Left - Text Content */}
-          <div className="space-y-6">
-            <h3 className="font-display text-2xl lg:text-3xl font-bold text-primary">
+          <div className="space-y-6 text-[#262626]">
+            <h3 className="font-display text-2xl lg:text-3xl font-bold">
               Wij bouwen bruggen tussen merken en creators
             </h3>
-            <p className="text-lg text-primary/70 leading-relaxed">
+            <p className="text-lg opacity-70 leading-relaxed">
               House of Engagement is een full-service talentenbureau dat gelooft in de kracht van authentieke verbindingen. Wij verbinden topmerken met de meest invloedrijke creators van Nederland.
             </p>
-            <p className="text-lg text-primary/70 leading-relaxed">
+            <p className="text-lg opacity-70 leading-relaxed">
               Onze missie is om impactvolle samenwerkingen te creëren die zowel merken als creators naar een hoger niveau tillen. Met jarenlange ervaring in de industrie weten wij precies hoe we de juiste match maken.
             </p>
           </div>
