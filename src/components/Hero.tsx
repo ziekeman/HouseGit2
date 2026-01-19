@@ -73,7 +73,7 @@ const Hero = () => {
             </button>
 
             {/* Trusted By */}
-            <div className="mt-8 lg:mt-10">
+            <div className="mt-6 lg:mt-10 scale-[0.85] lg:scale-100 origin-left">
               <p className="text-sm font-display font-bold italic tracking-wider text-primary mb-4 lg:mb-6 text-center lg:text-left">
                 TRUSTED BY
               </p>
