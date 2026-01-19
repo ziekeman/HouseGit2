@@ -63,7 +63,7 @@ const Hero = () => {
           {/* Right Content - Photo Collage */}
           <div className="relative lg:h-[700px] flex items-center justify-center">
             {/* Main Image - Woman with balloons */}
-            <div className="relative w-full max-w-md lg:max-w-none lg:w-[420px] aspect-[3/4] rounded-[2rem] overflow-hidden">
+            <div className="relative w-full max-w-md lg:max-w-none lg:w-[420px] aspect-[3/4] rounded-[2rem] overflow-hidden border-[6px] border-white shadow-lg">
               <img 
                 src={heroTabitha} 
                 alt="Tabitha with balloons" 
