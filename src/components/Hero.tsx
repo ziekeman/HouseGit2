@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
 
           {/* Text Content */}
-          <div className="order-first lg:order-first flex flex-col justify-center lg:pt-16 mt-8 lg:mt-0">
+          <div className="order-first lg:order-first flex flex-col justify-center lg:pt-16">
             {/* Main Headline */}
             <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold italic text-primary leading-[0.9] mb-2">
               <span className="block">FROM</span>
