@@ -74,7 +74,7 @@ const Hero = () => {
                         key={i}
                         src={logo.src}
                         alt={logo.alt}
-                        className="h-12 w-auto object-contain mx-8 grayscale brightness-0 flex-shrink-0"
+                        className="h-12 w-auto object-contain mx-4 grayscale brightness-0 flex-shrink-0"
                       />
                     ))}
                     {/* Duplicate for seamless loop */}
@@ -83,7 +83,7 @@ const Hero = () => {
                         key={`dup-${i}`}
                         src={logo.src}
                         alt={logo.alt}
-                        className="h-12 w-auto object-contain mx-8 grayscale brightness-0 flex-shrink-0"
+                        className="h-12 w-auto object-contain mx-4 grayscale brightness-0 flex-shrink-0"
                       />
                     ))}
                   </div>
