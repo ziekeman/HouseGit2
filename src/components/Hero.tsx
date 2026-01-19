@@ -1,6 +1,23 @@
 import { ArrowRight } from "lucide-react";
 import houseOfEngagementSign from "@/assets/house-of-engagement-sign.png";
 import heroTabitha from "@/assets/hero-tabitha.png";
+
+// Logo imports
+import logoNewYorkPizza from "@/assets/logos/logo-new-york-pizza.png";
+import logoRedbull from "@/assets/logos/logo-redbull.png";
+import logoMercedes from "@/assets/logos/logo-mercedes.png";
+import logoOdido from "@/assets/logos/logo-odido.png";
+import logoPuma from "@/assets/logos/logo-puma.png";
+import logoUnderArmour from "@/assets/logos/logo-under-armour.png";
+
+const logos = [
+  { src: logoNewYorkPizza, alt: "New York Pizza" },
+  { src: logoRedbull, alt: "Red Bull" },
+  { src: logoMercedes, alt: "Mercedes-Benz" },
+  { src: logoOdido, alt: "Odido" },
+  { src: logoPuma, alt: "Puma" },
+  { src: logoUnderArmour, alt: "Under Armour" },
+];
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById("contact");
@@ -42,12 +59,28 @@ const Hero = () => {
               <p className="text-xs font-medium tracking-wider text-muted-foreground mb-6 font-body">
                 TRUSTED BY
               </p>
-              <div className="flex items-center gap-8 flex-wrap">
-                {/* Placeholder logos - will be replaced with actual logos */}
-                <div className="h-6 w-24 bg-foreground/20 rounded opacity-60" />
-                <div className="h-8 w-20 bg-foreground/20 rounded opacity-60" />
-                <div className="h-6 w-28 bg-foreground/20 rounded opacity-60" />
-                <div className="h-7 w-16 bg-foreground/20 rounded opacity-60" />
+              {/* Logo Carousel - shows 3 logos at a time */}
+              <div className="overflow-hidden max-w-[320px]">
+                <div className="flex animate-scroll-left">
+                  {/* First set of logos */}
+                  {logos.map((logo, i) => (
+                    <img
+                      key={i}
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="h-8 w-auto object-contain mx-6 grayscale brightness-0 opacity-70 flex-shrink-0"
+                    />
+                  ))}
+                  {/* Duplicate for seamless loop */}
+                  {logos.map((logo, i) => (
+                    <img
+                      key={`dup-${i}`}
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="h-8 w-auto object-contain mx-6 grayscale brightness-0 opacity-70 flex-shrink-0"
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
