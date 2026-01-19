@@ -34,8 +34,8 @@ const CasesSection = () => {
             {/* Dark gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent" />
             {/* Title text */}
-            <div className="absolute top-8 left-0 right-0 text-center px-4">
-              <h3 className="font-display font-bold italic text-2xl lg:text-3xl text-secondary uppercase leading-tight">
+            <div className="absolute inset-0 flex items-center justify-center px-4">
+              <h3 className="font-display font-bold italic text-2xl lg:text-3xl text-secondary uppercase leading-tight text-center">
                 NIMO X<br />MERCEDES<br />GOMES
               </h3>
             </div>
@@ -53,8 +53,8 @@ const CasesSection = () => {
               {/* Dark gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent" />
               {/* Title text */}
-              <div className="absolute top-8 left-0 right-0 text-center px-4">
-                <h3 className="font-display font-bold italic text-2xl lg:text-3xl text-secondary uppercase leading-tight whitespace-pre-line">
+              <div className="absolute inset-0 flex items-center justify-center px-4">
+                <h3 className="font-display font-bold italic text-2xl lg:text-3xl text-secondary uppercase leading-tight whitespace-pre-line text-center">
                   {item.title}
                 </h3>
               </div>
