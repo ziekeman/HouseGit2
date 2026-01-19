@@ -27,7 +27,7 @@ const Hero = () => {
       });
     }
   };
-  return <section id="about" className="min-h-screen pt-28 pb-16 px-6 lg:px-12">
+  return <section id="hero" className="min-h-screen pt-28 pb-16 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-start">
           {/* Left Content */}
