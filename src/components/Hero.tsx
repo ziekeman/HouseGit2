@@ -40,7 +40,7 @@ const Hero = () => {
             </div>
 
             {/* Overlay Image - House of Engagement sign */}
-            <div className="absolute -bottom-4 -left-4 lg:bottom-8 lg:-left-16 w-24 lg:w-64 aspect-square rounded-[1rem] lg:rounded-[1.5rem] overflow-hidden shadow-lg border-2 lg:border-[6px] border-white">
+            <div className="absolute -bottom-4 -left-4 lg:bottom-8 lg:-left-16 w-32 lg:w-64 aspect-square rounded-[1rem] lg:rounded-[1.5rem] overflow-hidden shadow-lg border-4 lg:border-[6px] border-white">
               <img src={houseOfEngagementSign} alt="House of Engagement sign" className="w-full h-full object-cover" />
             </div>
           </div>
