@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const scrollToSection = (id: string) => {
@@ -12,20 +13,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 lg:px-12 lg:py-6">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
-        <div className="flex flex-col items-start leading-none">
-          <span className="text-[10px] font-body font-medium tracking-[0.2em] uppercase text-foreground">
-            HOUSE OF
-          </span>
-          <div className="flex items-center gap-1">
-            <span className="text-sm font-body font-semibold tracking-wide uppercase text-foreground">
-              ENGAGE
-            </span>
-            <span className="text-accent text-lg">♥</span>
-            <span className="text-sm font-body font-semibold tracking-wide uppercase text-foreground">
-              ENT
-            </span>
-          </div>
-        </div>
+        <img src={logo} alt="House of Engagement" className="h-10 w-auto" />
 
         {/* Navigation Pill */}
         <nav className="hidden md:flex items-center bg-nav rounded-full px-2 py-2 shadow-sm">
