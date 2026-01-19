@@ -1,24 +1,7 @@
-import { ArrowRight } from "lucide-react";
-
 const ContactSection = () => {
   return (
     <section id="contact" className="py-24 px-6 lg:px-12 bg-foreground">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="font-display text-4xl lg:text-6xl font-bold italic text-background mb-6">
-          Let's Engage
-        </h2>
-        <p className="text-background/70 text-lg mb-10 max-w-xl mx-auto font-body">
-          Klaar om samen impact te maken? Neem contact met ons op.
-        </p>
-        
-        <a
-          href="mailto:hello@houseofengagement.nl"
-          className="inline-flex items-center gap-3 bg-secondary text-secondary-foreground px-8 py-4 rounded-full font-medium text-base hover:opacity-90 transition-opacity group"
-        >
-          Get in Touch
-          <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
-        </a>
-        
+      <div className="max-w-7xl mx-auto">
         {/* Footer - 4 Column Layout */}
         <div className="mt-20 pt-10 border-t border-background/10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
