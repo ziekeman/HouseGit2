@@ -1,9 +1,9 @@
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-24 px-6 lg:px-12 bg-foreground">
+    <section id="contact" className="py-12 px-6 lg:px-12 bg-foreground">
       <div className="max-w-7xl mx-auto">
         {/* Footer - 4 Column Layout */}
-        <div className="mt-20 pt-10 border-t border-background/10">
+        <div className="pt-10 border-t border-background/10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
             {/* Column 1 - Logo */}
             <div className="flex flex-col items-start leading-none text-background">
