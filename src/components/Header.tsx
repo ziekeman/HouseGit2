@@ -1,7 +1,36 @@
 import { ArrowRight } from "lucide-react";
+import { useState, useEffect } from "react";
 import logo from "@/assets/logo.png";
 
+const navItems = [
+  { id: "about", label: "ABOUT" },
+  { id: "talents", label: "TALENTS" },
+  { id: "cases", label: "CASES" },
+];
+
 const Header = () => {
+  const [activeSection, setActiveSection] = useState("about");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.3, rootMargin: "-100px 0px -50% 0px" }
+    );
+
+    navItems.forEach(({ id }) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -17,24 +46,19 @@ const Header = () => {
 
         {/* Navigation Pill */}
         <nav className="hidden md:flex items-center bg-nav rounded-full px-2 py-2 shadow-sm">
-          <button
-            onClick={() => scrollToSection("about")}
-            className="px-6 py-2.5 rounded-full bg-white text-primary uppercase font-display text-sm tracking-wide transition-all"
-          >
-            ABOUT
-          </button>
-          <button
-            onClick={() => scrollToSection("talents")}
-            className="px-6 py-2.5 rounded-full text-muted-foreground uppercase font-display text-sm tracking-wide hover:text-primary transition-all"
-          >
-            TALENTS
-          </button>
-          <button
-            onClick={() => scrollToSection("cases")}
-            className="px-6 py-2.5 rounded-full text-muted-foreground uppercase font-display text-sm tracking-wide hover:text-primary transition-all"
-          >
-            CASES
-          </button>
+          {navItems.map(({ id, label }) => (
+            <button
+              key={id}
+              onClick={() => scrollToSection(id)}
+              className={`px-6 py-2.5 rounded-full uppercase font-display text-sm tracking-wide transition-all ${
+                activeSection === id
+                  ? "bg-white text-primary"
+                  : "text-muted-foreground hover:text-primary"
+              }`}
+            >
+              {label}
+            </button>
+          ))}
         </nav>
 
         {/* CTA Button */}
