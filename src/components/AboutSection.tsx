@@ -13,9 +13,6 @@ const AboutSection = () => {
           <h2 className="font-display text-5xl lg:text-7xl font-black italic uppercase text-primary mb-6">
             OVER ONS
           </h2>
-          <p className="text-xl lg:text-2xl text-primary/80 max-w-3xl mx-auto">
-            Wij zijn House of Engagement
-          </p>
         </div>
 
         {/* Content */}
