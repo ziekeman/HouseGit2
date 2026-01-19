@@ -1,53 +1,68 @@
+import { ArrowRight } from "lucide-react";
+
 const AboutSection = () => {
-  const stats = [
-    { value: "10+", label: "Jaar ervaring" },
-    { value: "50+", label: "Talenten" },
-    { value: "100+", label: "Campagnes" },
-  ];
-
   return (
-    <section id="about" className="py-24 px-6 lg:px-12 bg-muted/50">
+    <section id="about" className="py-16 px-6 lg:px-12 bg-background">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="font-display text-5xl lg:text-7xl font-black italic uppercase text-primary mb-6">
-            OVER ONS
-          </h2>
-        </div>
-
-        {/* Content */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
-          {/* Left - Text Content */}
-          <div className="space-y-6 text-[#262626]">
-            <h3 className="font-display text-2xl lg:text-3xl font-bold">
-              Wij bouwen bruggen tussen merken en creators
-            </h3>
-            <p className="text-lg opacity-70 leading-relaxed">
-              House of Engagement is een full-service talentenbureau dat gelooft in de kracht van authentieke verbindingen. Wij verbinden topmerken met de meest invloedrijke creators van Nederland.
-            </p>
-            <p className="text-lg opacity-70 leading-relaxed">
-              Onze missie is om impactvolle samenwerkingen te creëren die zowel merken als creators naar een hoger niveau tillen. Met jarenlange ervaring in de industrie weten wij precies hoe we de juiste match maken.
-            </p>
-          </div>
-
-          {/* Right - Stats */}
-          <div className="grid grid-cols-3 gap-6">
-            {stats.map((stat, index) => (
-              <div
-                key={index}
-                className="bg-[#F0787A] rounded-3xl p-6 text-center shadow-lg border-4 border-white"
-              >
-                <div className="font-display text-4xl lg:text-5xl font-black text-[#262626] mb-2">
-                  {stat.value}
-                </div>
-                <div className="font-display text-sm lg:text-base text-[#262626]/70 font-medium">
-                  {stat.label}
-                </div>
+        <div className="bg-[#F0787A] rounded-[3rem] p-8 lg:p-16">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+            {/* Left Column - Contact Info */}
+            <div className="space-y-8">
+              <div>
+                <h2 className="font-display text-5xl lg:text-7xl font-black italic text-[#722D26] uppercase leading-none">
+                  LET'S
+                </h2>
+                <h2 className="font-display text-5xl lg:text-7xl font-black italic text-[#722D26] uppercase leading-none">
+                  ENGAGE
+                </h2>
               </div>
-            ))}
+              
+              <p className="font-display text-xl lg:text-2xl font-bold text-[#262626] uppercase">
+                Ready to make an impact?
+              </p>
+              
+              <div className="space-y-4 text-[#262626]">
+                <a 
+                  href="mailto:hello@houseofengagement.com" 
+                  className="block font-body text-lg underline hover:opacity-70 transition-opacity"
+                >
+                  hello@houseofengagement.com
+                </a>
+                <p className="font-body text-lg">
+                  +31 (0) 20 123 45 67
+                </p>
+                <p className="font-body text-lg">
+                  Amsterdam, The Netherlands
+                </p>
+              </div>
+            </div>
+            
+            {/* Right Column - Contact Form */}
+            <div className="space-y-6">
+              <input
+                type="text"
+                placeholder="NAME"
+                className="w-full bg-white rounded-2xl px-6 py-4 font-body text-base placeholder:text-[#262626]/50 placeholder:uppercase focus:outline-none focus:ring-2 focus:ring-[#722D26]/30"
+              />
+              <input
+                type="email"
+                placeholder="EMAIL"
+                className="w-full bg-white rounded-2xl px-6 py-4 font-body text-base placeholder:text-[#262626]/50 placeholder:uppercase focus:outline-none focus:ring-2 focus:ring-[#722D26]/30"
+              />
+              <textarea
+                placeholder="TELL US ABOUT YOUR PROJECT"
+                rows={6}
+                className="w-full bg-white rounded-2xl px-6 py-4 font-body text-base placeholder:text-[#262626]/50 placeholder:uppercase focus:outline-none focus:ring-2 focus:ring-[#722D26]/30 resize-none"
+              />
+              <button className="inline-flex items-center gap-3 bg-[#262626] text-white px-8 py-4 rounded-full font-display font-bold text-base uppercase hover:opacity-90 transition-opacity group">
+                Send Message
+                <span className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center">
+                  <ArrowRight className="w-4 h-4 text-[#262626] group-hover:translate-x-0.5 transition-transform" />
+                </span>
+              </button>
+            </div>
           </div>
         </div>
-
       </div>
     </section>
   );
