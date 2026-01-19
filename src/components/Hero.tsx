@@ -63,7 +63,7 @@ const Hero = () => {
           {/* Right Content - Photo Collage */}
           <div className="relative lg:h-[700px] flex items-center justify-center">
             {/* Main Image - Woman with balloons */}
-            <div className="relative w-full max-w-md lg:max-w-none lg:w-[380px] aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative w-full max-w-md lg:max-w-none lg:w-[420px] aspect-[3/4] rounded-[2rem] overflow-hidden">
               <img 
                 src={heroTabitha} 
                 alt="Tabitha with balloons" 
@@ -72,7 +72,7 @@ const Hero = () => {
             </div>
 
             {/* Overlay Image - House of Engagement sign */}
-            <div className="absolute -bottom-4 -left-4 lg:bottom-8 lg:-left-8 w-48 lg:w-56 aspect-square rounded-2xl overflow-hidden shadow-xl border-4 border-background">
+            <div className="absolute -bottom-8 -left-8 lg:bottom-4 lg:-left-16 w-52 lg:w-64 aspect-square rounded-[1.5rem] overflow-hidden shadow-lg border-[6px] border-white">
               <img 
                 src={houseOfEngagementSign} 
                 alt="House of Engagement sign" 
