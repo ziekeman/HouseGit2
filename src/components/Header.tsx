@@ -19,21 +19,21 @@ const Header = () => {
         <nav className="hidden md:flex items-center bg-nav rounded-full px-2 py-2 shadow-sm">
           <button
             onClick={() => scrollToSection("about")}
-            className="px-5 py-2 rounded-full bg-nav-active text-primary-foreground text-sm font-medium transition-all"
+            className="px-6 py-2.5 rounded-full bg-white text-primary uppercase font-display text-sm tracking-wide transition-all"
           >
-            About
+            ABOUT
           </button>
           <button
             onClick={() => scrollToSection("talents")}
-            className="px-5 py-2 rounded-full text-foreground text-sm font-medium hover:bg-muted transition-all"
+            className="px-6 py-2.5 rounded-full text-muted-foreground uppercase font-display text-sm tracking-wide hover:text-primary transition-all"
           >
-            Talents
+            TALENTS
           </button>
           <button
             onClick={() => scrollToSection("cases")}
-            className="px-5 py-2 rounded-full text-foreground text-sm font-medium hover:bg-muted transition-all"
+            className="px-6 py-2.5 rounded-full text-muted-foreground uppercase font-display text-sm tracking-wide hover:text-primary transition-all"
           >
-            Cases
+            CASES
           </button>
         </nav>
 
