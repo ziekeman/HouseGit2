@@ -1,3 +1,19 @@
+import talent1 from "@/assets/talents/talent-1.png";
+import talent2 from "@/assets/talents/talent-2.png";
+import talent3 from "@/assets/talents/talent-3.png";
+import talentJordan from "@/assets/talents/talent-jordan.jpg";
+import talentNimo from "@/assets/talents/talent-nimo.jpg";
+import talentPape from "@/assets/talents/talent-pape.jpg";
+
+const talents = [
+  { id: 1, name: "Talent Name", image: talent1 },
+  { id: 2, name: "Talent Name", image: talent2 },
+  { id: 3, name: "Talent Name", image: talent3 },
+  { id: 4, name: "Talent Name", image: talentJordan },
+  { id: 5, name: "Talent Name", image: talentNimo },
+  { id: 6, name: "Talent Name", image: talentPape },
+];
+
 const TalentsSection = () => {
   return (
     <section id="talents" className="py-24 px-6 lg:px-12 bg-muted/50">
@@ -9,11 +25,20 @@ const TalentsSection = () => {
           Een divers netwerk van creators, artiesten en makers die impact creëren.
         </p>
         
-        {/* Placeholder for talents grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {[1, 2, 3, 4].map((i) => (
-            <div key={i} className="aspect-[3/4] rounded-2xl bg-muted flex items-center justify-center">
-              <span className="text-muted-foreground text-sm font-body">Talent {i}</span>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+          {talents.map((talent) => (
+            <div 
+              key={talent.id} 
+              className="relative aspect-[3/4] rounded-2xl overflow-hidden group cursor-pointer"
+            >
+              <img 
+                src={talent.image} 
+                alt={talent.name} 
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4 pt-12">
+                <span className="font-display text-white font-bold text-lg">{talent.name}</span>
+              </div>
             </div>
           ))}
         </div>
