@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import logo from "@/assets/logo.png";
 
 const navItems = [
@@ -10,6 +10,9 @@ const navItems = [
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState("about");
+  const [indicatorStyle, setIndicatorStyle] = useState({ width: 0, left: 0 });
+  const navRef = useRef<HTMLElement>(null);
+  const buttonRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -31,6 +34,22 @@ const Header = () => {
     return () => observer.disconnect();
   }, []);
 
+  // Update indicator position when active section changes
+  useEffect(() => {
+    const activeIndex = navItems.findIndex((item) => item.id === activeSection);
+    const activeButton = buttonRefs.current[activeIndex];
+    
+    if (activeButton && navRef.current) {
+      const navRect = navRef.current.getBoundingClientRect();
+      const buttonRect = activeButton.getBoundingClientRect();
+      
+      setIndicatorStyle({
+        width: buttonRect.width,
+        left: buttonRect.left - navRect.left,
+      });
+    }
+  }, [activeSection]);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -45,14 +64,27 @@ const Header = () => {
         <img src={logo} alt="House of Engagement" className="h-20 w-auto" />
 
         {/* Navigation Pill */}
-        <nav className="hidden md:flex items-center bg-nav rounded-full px-2 py-2 shadow-sm">
-          {navItems.map(({ id, label }) => (
+        <nav 
+          ref={navRef}
+          className="hidden md:flex items-center bg-nav rounded-full px-2 py-2 shadow-sm relative"
+        >
+          {/* Sliding Indicator */}
+          <span
+            className="absolute bg-white rounded-full transition-all duration-300 ease-out h-[calc(100%-16px)] top-2"
+            style={{
+              width: indicatorStyle.width,
+              left: indicatorStyle.left,
+            }}
+          />
+          
+          {navItems.map(({ id, label }, index) => (
             <button
               key={id}
+              ref={(el) => (buttonRefs.current[index] = el)}
               onClick={() => scrollToSection(id)}
-              className={`px-6 py-2.5 rounded-full uppercase font-display text-sm tracking-wide transition-all ${
+              className={`relative z-10 px-6 py-2.5 rounded-full uppercase font-display text-sm tracking-wide transition-colors duration-300 ${
                 activeSection === id
-                  ? "bg-white text-primary"
+                  ? "text-primary"
                   : "text-muted-foreground hover:text-primary"
               }`}
             >
