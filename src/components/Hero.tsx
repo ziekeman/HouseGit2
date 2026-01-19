@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           
           {/* Photo Collage - Shows first on mobile */}
-          <div className="order-first lg:order-last relative w-full lg:h-[700px] flex items-center justify-center">
+          <div className="order-last lg:order-last relative w-full lg:h-[700px] flex items-center justify-center">
             {/* Main Image - Woman with balloons */}
             <div className="relative w-full aspect-[4/5] lg:aspect-[5/6.1] lg:w-[520px] rounded-tl-[4rem] lg:rounded-tl-[6rem] rounded-tr-none rounded-br-none rounded-bl-none overflow-hidden border-4 lg:border-[6px] border-white shadow-lg">
               <img src={heroTabitha} alt="Tabitha with balloons" className="w-full h-full object-cover" />
@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
 
           {/* Text Content */}
-          <div className="order-last lg:order-first flex flex-col justify-center lg:pt-16 mt-8 lg:mt-0">
+          <div className="order-first lg:order-first flex flex-col justify-center lg:pt-16 mt-8 lg:mt-0">
             {/* Main Headline */}
             <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold italic text-primary leading-[0.9] mb-2">
               <span className="block">FROM</span>
