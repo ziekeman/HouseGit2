@@ -40,10 +40,12 @@ const Header = () => {
         {/* CTA Button */}
         <button
           onClick={() => scrollToSection("contact")}
-          className="flex items-center gap-2 bg-secondary text-secondary-foreground px-5 py-3 rounded-full font-medium text-sm hover:opacity-90 transition-opacity"
+          className="flex items-center gap-3 bg-black text-white pl-6 pr-2 py-2 rounded-full font-display text-sm hover:opacity-90 transition-opacity"
         >
           Let's engage
-          <ArrowRight className="w-4 h-4" />
+          <span className="bg-secondary rounded-full p-2 flex items-center justify-center">
+            <ArrowRight className="w-4 h-4 text-black" />
+          </span>
         </button>
       </div>
     </header>
