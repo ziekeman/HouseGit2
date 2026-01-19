@@ -7,7 +7,7 @@ const CasesSection = () => {
           <h2 className="font-display text-6xl lg:text-8xl xl:text-9xl font-black italic text-primary uppercase leading-[0.85]">
             CREATE,
           </h2>
-          <h2 className="font-display text-6xl lg:text-8xl xl:text-9xl font-black italic text-primary uppercase leading-[0.85]">
+          <h2 className="font-display text-5xl lg:text-7xl xl:text-8xl font-black italic text-primary uppercase leading-[0.85]">
             ENGAGE,
           </h2>
           <h2 className="font-display text-6xl lg:text-8xl xl:text-9xl font-black italic text-primary uppercase leading-[0.85]">
