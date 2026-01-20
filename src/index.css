@@ -142,15 +142,16 @@
 /* Infinite scroll animation for logo carousel - seamless loop */
 @keyframes scroll-left-seamless {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(var(--scroll-width, -50%));
+    transform: translate3d(var(--scroll-width, -50%), 0, 0);
   }
 }
 
 .animate-scroll-left {
-  display: inline-flex;
+  display: flex;
+  width: max-content;
   animation: scroll-left-seamless 20s linear infinite;
   will-change: transform;
 }
