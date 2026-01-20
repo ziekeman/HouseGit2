@@ -26,21 +26,17 @@ const Header = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        // Don't update if user just clicked a nav item
         if (isScrollingRef.current) return;
         
-        // Find the entry with the highest intersection ratio
-        const visibleEntries = entries.filter(entry => entry.isIntersecting);
-        if (visibleEntries.length > 0) {
-          const mostVisible = visibleEntries.reduce((prev, current) => 
-            current.intersectionRatio > prev.intersectionRatio ? current : prev
-          );
-          setActiveSection(mostVisible.target.id);
-        }
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
       },
       { 
-        threshold: [0.1, 0.2, 0.3, 0.4, 0.5],
-        rootMargin: "-80px 0px -20% 0px"
+        threshold: 0.4,
+        rootMargin: "-80px 0px -40% 0px"
       }
     );
 
