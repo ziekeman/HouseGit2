@@ -25,11 +25,52 @@ const Hero = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (scrollRef.current) {
-      const totalWidth = scrollRef.current.scrollWidth;
-      const singleSetWidth = totalWidth / 2;
-      scrollRef.current.style.setProperty('--scroll-width', `-${singleSetWidth}px`);
-    }
+    const container = scrollRef.current;
+    if (!container) return;
+
+    const updateScrollWidth = () => {
+      requestAnimationFrame(() => {
+        if (!container) return;
+        const totalWidth = container.scrollWidth;
+        if (totalWidth > 0) {
+          const singleSetWidth = Math.ceil(totalWidth / 2);
+          container.style.setProperty('--scroll-width', `-${singleSetWidth}px`);
+        }
+      });
+    };
+
+    // Initial calculation
+    updateScrollWidth();
+
+    // Recalculate when images load
+    const images = container.querySelectorAll('img');
+    images.forEach((img) => {
+      if (img.complete) {
+        updateScrollWidth();
+      } else {
+        img.addEventListener('load', updateScrollWidth);
+      }
+    });
+
+    // Recalculate on resize/orientation change
+    const resizeObserver = new ResizeObserver(updateScrollWidth);
+    resizeObserver.observe(container);
+
+    window.addEventListener('resize', updateScrollWidth);
+    window.addEventListener('orientationchange', updateScrollWidth);
+
+    // Delayed fallback for edge cases
+    const fallbackTimeout = setTimeout(updateScrollWidth, 500);
+
+    return () => {
+      images.forEach((img) => {
+        img.removeEventListener('load', updateScrollWidth);
+      });
+      resizeObserver.disconnect();
+      window.removeEventListener('resize', updateScrollWidth);
+      window.removeEventListener('orientationchange', updateScrollWidth);
+      clearTimeout(fallbackTimeout);
+    };
   }, []);
 
   const scrollToContact = () => {
