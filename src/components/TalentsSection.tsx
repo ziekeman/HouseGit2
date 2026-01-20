@@ -116,7 +116,7 @@ const TalentsSection = () => {
                     className={`
                       relative aspect-[3/4] rounded-2xl overflow-hidden group cursor-pointer 
                       scale-90 md:scale-100 transition-all duration-300
-                      ${isActive ? 'scale-100 shadow-xl shadow-black/30' : ''}
+                      ${isActive ? 'scale-100 -translate-y-2 shadow-xl shadow-black/30' : ''}
                     `}
                   >
                     <img 
