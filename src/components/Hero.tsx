@@ -96,17 +96,17 @@ const Hero = () => {
                   TRUSTED BY
                 </p>
 {/* Logo Carousel with fade edges */}
-                <div className="relative w-full max-w-[320px] lg:max-w-[480px]">
+<div className="relative w-full max-w-[320px] lg:max-w-[380px]">
                   {/* Left fade gradient */}
-                  <div className="absolute left-0 top-0 bottom-0 w-12 lg:w-20 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+                  <div className="absolute left-0 top-0 bottom-0 w-12 lg:w-16 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
                   {/* Right fade gradient */}
-                  <div className="absolute right-0 top-0 bottom-0 w-12 lg:w-20 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+                  <div className="absolute right-0 top-0 bottom-0 w-12 lg:w-16 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
                   
                   <div className="overflow-hidden">
                     <div className="animate-scroll-left">
                       {/* First set of logos */}
                       {logos.map((logo, i) => (
-                        <div key={i} className="flex-shrink-0 px-3 lg:px-5">
+                        <div key={i} className="flex-shrink-0 px-3 lg:px-3">
                           <img
                             src={logo.src}
                             alt={logo.alt}
@@ -116,7 +116,7 @@ const Hero = () => {
                       ))}
                       {/* Duplicate set for seamless loop */}
                       {logos.map((logo, i) => (
-                        <div key={`dup-${i}`} className="flex-shrink-0 px-3 lg:px-5">
+                        <div key={`dup-${i}`} className="flex-shrink-0 px-3 lg:px-3">
                           <img
                             src={logo.src}
                             alt={logo.alt}
