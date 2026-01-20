@@ -1,3 +1,4 @@
+import { useRef, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import houseOfEngagementSign from "@/assets/house-of-engagement-sign.png";
 import heroTabitha from "@/assets/hero-tabitha.png";
@@ -21,6 +22,16 @@ const logos = [
 ];
 
 const Hero = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      const totalWidth = scrollRef.current.scrollWidth;
+      const singleSetWidth = totalWidth / 2;
+      scrollRef.current.style.setProperty('--scroll-width', `-${singleSetWidth}px`);
+    }
+  }, []);
+
   const scrollToContact = () => {
     const element = document.getElementById("contact");
     if (element) {
@@ -103,7 +114,7 @@ const Hero = () => {
                   <div className="absolute right-0 top-0 bottom-0 w-12 lg:w-16 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
                   
                   <div className="overflow-hidden">
-                    <div className="animate-scroll-left">
+                    <div ref={scrollRef} className="animate-scroll-left">
                       {/* First set of logos */}
                       {logos.map((logo, i) => (
                         <div key={i} className="flex-shrink-0 px-3 lg:px-3">
