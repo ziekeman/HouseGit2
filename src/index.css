@@ -139,8 +139,8 @@
   }
 }
 
-/* Infinite scroll animation for logo carousel */
-@keyframes scroll-left {
+/* Infinite scroll animation for logo carousel - seamless loop */
+@keyframes scroll-left-seamless {
   0% {
     transform: translateX(0);
   }
@@ -150,6 +150,7 @@
 }
 
 .animate-scroll-left {
-  animation: scroll-left 20s linear infinite;
+  display: inline-flex;
+  animation: scroll-left-seamless 25s linear infinite;
   will-change: transform;
 }
