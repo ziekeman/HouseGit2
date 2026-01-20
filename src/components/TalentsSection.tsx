@@ -114,18 +114,15 @@ const TalentsSection = () => {
                 >
                   <div 
                     className={`
-                      relative aspect-[3/4] rounded-2xl overflow-hidden group cursor-pointer scale-90 md:scale-100 transition-shadow duration-300
-                      ${isActive ? 'shadow-xl shadow-black/30' : ''}
+                      relative aspect-[3/4] rounded-2xl overflow-hidden group cursor-pointer 
+                      scale-90 md:scale-100 transition-all duration-300
+                      ${isActive ? 'scale-100 shadow-xl shadow-black/30' : ''}
                     `}
                   >
                     <img 
                       src={talent.image} 
                       alt={talent.name} 
-                      className={`
-                        w-full h-full object-cover transition-transform duration-300 ease-out
-                        ${isActive ? 'scale-105' : ''}
-                        md:group-hover:scale-105
-                      `}
+                      className="w-full h-full object-cover transition-transform duration-300 ease-out md:group-hover:scale-105"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 via-50% to-transparent p-4 pt-24 text-right">
                       <span className="font-display text-secondary font-bold italic text-2xl md:text-3xl">{talent.name}</span>
