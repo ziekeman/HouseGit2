@@ -91,9 +91,13 @@ const Header = () => {
           ref={navRef}
           className="hidden md:flex items-center bg-nav rounded-full px-2 py-2 shadow-sm relative"
         >
-          {/* Sliding Indicator - Glass effect */}
+          {/* Sliding Indicator - Liquid Glass iOS style */}
           <span
-            className="absolute bg-white/70 backdrop-blur-sm rounded-full transition-all duration-300 ease-out h-[calc(100%-16px)] top-2 shadow-sm border border-white/50"
+            className="absolute rounded-full transition-all duration-300 ease-out h-[calc(100%-16px)] top-2 
+              bg-gradient-to-b from-white/60 via-white/40 to-white/20
+              backdrop-blur-xl
+              shadow-[0_2px_8px_rgba(255,255,255,0.3),inset_0_1px_2px_rgba(255,255,255,0.6),inset_0_-1px_2px_rgba(0,0,0,0.05)]
+              border border-white/40"
             style={{
               width: indicatorStyle.width,
               left: indicatorStyle.left,
