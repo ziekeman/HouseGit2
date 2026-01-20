@@ -53,7 +53,7 @@ const ContactSection = () => {
           {/* Copyright */}
           <AnimatedSection animation="fade-up" delay={400}>
             <p className="text-background/50 text-sm font-body mt-10 text-center">
-              © 2024 House of Engagement. All rights reserved.
+              © 2026 House of Engagement. All rights reserved.
             </p>
           </AnimatedSection>
         </div>
