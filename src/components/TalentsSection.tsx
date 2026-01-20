@@ -113,7 +113,7 @@ const TalentsSection = () => {
                   }}
                 >
                   <div 
-                    className="relative aspect-[3/4] rounded-2xl overflow-hidden group cursor-pointer"
+                    className="relative aspect-[3/4] rounded-2xl overflow-hidden group cursor-pointer scale-90 md:scale-100"
                   >
                     <img 
                       src={talent.image} 
