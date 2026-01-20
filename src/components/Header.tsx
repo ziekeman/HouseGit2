@@ -111,10 +111,21 @@ const Header = () => {
     }
     setIsOpen(false);
     
-    // Unlock after scroll animation completes
-    setTimeout(() => {
+    // Use scrollend event for accurate detection
+    const handleScrollEnd = () => {
       isScrollingRef.current = false;
-    }, 800);
+      window.removeEventListener('scrollend', handleScrollEnd);
+    };
+    
+    window.addEventListener('scrollend', handleScrollEnd, { once: true });
+    
+    // Fallback for browsers without scrollend support
+    setTimeout(() => {
+      if (isScrollingRef.current) {
+        isScrollingRef.current = false;
+        window.removeEventListener('scrollend', handleScrollEnd);
+      }
+    }, 1500);
   };
 
   return (
@@ -130,7 +141,7 @@ const Header = () => {
         >
           {/* Sliding Indicator - Liquid Glass iOS style */}
           <span
-            className="absolute rounded-full transition-all duration-300 ease-out h-[calc(100%-16px)] top-2 
+            className="absolute rounded-full transition-all duration-500 ease-out h-[calc(100%-16px)] top-2 
               bg-gradient-to-b from-white/60 via-white/40 to-white/20
               backdrop-blur-xl
               shadow-[0_2px_8px_rgba(255,255,255,0.3),inset_0_1px_2px_rgba(255,255,255,0.6),inset_0_-1px_2px_rgba(0,0,0,0.05)]
