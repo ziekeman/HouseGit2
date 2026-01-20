@@ -1,5 +1,5 @@
 import { ArrowRight, Menu, X } from "lucide-react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import logo from "@/assets/logo.png";
 import {
   Sheet,
@@ -16,7 +16,7 @@ const navItems = [
 ];
 
 const Header = () => {
-  const [activeSection, setActiveSection] = useState("about");
+  const [activeSection, setActiveSection] = useState("hero");
   const [indicatorStyle, setIndicatorStyle] = useState({ width: 0, left: 0 });
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef<HTMLElement>(null);
@@ -49,20 +49,33 @@ const Header = () => {
   }, []);
 
   // Update indicator position when active section changes
-  useEffect(() => {
+  const updateIndicator = useCallback(() => {
     const activeIndex = navItems.findIndex((item) => item.id === activeSection);
     const activeButton = buttonRefs.current[activeIndex];
-    
+
     if (activeButton && navRef.current) {
       const navRect = navRef.current.getBoundingClientRect();
       const buttonRect = activeButton.getBoundingClientRect();
-      
+
       setIndicatorStyle({
         width: buttonRect.width,
         left: buttonRect.left - navRect.left,
       });
     }
   }, [activeSection]);
+
+  useEffect(() => {
+    updateIndicator();
+    // Run after a brief delay to ensure DOM is fully rendered
+    const timeoutId = setTimeout(updateIndicator, 100);
+    return () => clearTimeout(timeoutId);
+  }, [updateIndicator]);
+
+  // Recalculate on resize
+  useEffect(() => {
+    window.addEventListener('resize', updateIndicator);
+    return () => window.removeEventListener('resize', updateIndicator);
+  }, [updateIndicator]);
 
   const scrollToSection = (id: string) => {
     isScrollingRef.current = true;
