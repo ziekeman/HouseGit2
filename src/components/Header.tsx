@@ -12,7 +12,7 @@ const navItems = [
   { id: "hero", label: "HOME" },
   { id: "talents", label: "TALENT" },
   { id: "cases", label: "CASES" },
-  { id: "about", label: "ABOUT" },
+  { id: "about", label: "CONTACT" },
 ];
 
 const Header = () => {
@@ -29,13 +29,19 @@ const Header = () => {
         // Don't update if user just clicked a nav item
         if (isScrollingRef.current) return;
         
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
+        // Find the entry with the highest intersection ratio
+        const visibleEntries = entries.filter(entry => entry.isIntersecting);
+        if (visibleEntries.length > 0) {
+          const mostVisible = visibleEntries.reduce((prev, current) => 
+            current.intersectionRatio > prev.intersectionRatio ? current : prev
+          );
+          setActiveSection(mostVisible.target.id);
+        }
       },
-      { threshold: 0.3, rootMargin: "-100px 0px -50% 0px" }
+      { 
+        threshold: [0.1, 0.2, 0.3, 0.4, 0.5],
+        rootMargin: "-80px 0px -20% 0px"
+      }
     );
 
     navItems.forEach(({ id }) => {
