@@ -121,7 +121,7 @@ const Hero = () => {
                           <img
                             src={logo.src}
                             alt={logo.alt}
-                            className="h-10 lg:h-12 w-auto object-contain grayscale brightness-0"
+                            className="h-10 lg:h-12 w-auto object-contain grayscale brightness-0 transition-transform duration-200 hover:scale-110"
                           />
                         </div>
                       ))}
@@ -131,7 +131,7 @@ const Hero = () => {
                           <img
                             src={logo.src}
                             alt={logo.alt}
-                            className="h-10 lg:h-12 w-auto object-contain grayscale brightness-0"
+                            className="h-10 lg:h-12 w-auto object-contain grayscale brightness-0 transition-transform duration-200 hover:scale-110"
                           />
                         </div>
                       ))}
