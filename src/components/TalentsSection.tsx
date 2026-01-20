@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import talent1 from "@/assets/talents/talent-1.png";
 import talent2 from "@/assets/talents/talent-2.png";
 import talent3 from "@/assets/talents/talent-3.png";
@@ -8,6 +8,7 @@ import talentPape from "@/assets/talents/talent-pape.jpg";
 import talentGynamo from "@/assets/talents/talent-gynamo.png";
 import talentTabitha from "@/assets/talents/talent-tabitha.png";
 import AnimatedSection from "@/components/AnimatedSection";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const talents = [
   { id: 1, name: "FRAASIE", image: talent1 },
@@ -22,6 +23,57 @@ const talents = [
 
 const TalentsSection = () => {
   const [showAll, setShowAll] = useState(false);
+  const [activeCardId, setActiveCardId] = useState<number | null>(null);
+  const isMobile = useIsMobile();
+  const cardRefs = useRef<Map<number, HTMLDivElement>>(new Map());
+
+  const setCardRef = useCallback((id: number, el: HTMLDivElement | null) => {
+    if (el) {
+      cardRefs.current.set(id, el);
+    } else {
+      cardRefs.current.delete(id);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!isMobile) {
+      setActiveCardId(null);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        let maxRatio = 0;
+        let mostVisibleId: number | null = null;
+
+        // Check all current refs to find the most visible card
+        cardRefs.current.forEach((el, id) => {
+          const entry = entries.find(e => e.target === el);
+          if (entry && entry.intersectionRatio > maxRatio) {
+            maxRatio = entry.intersectionRatio;
+            mostVisibleId = id;
+          }
+        });
+
+        // Only update if we found a card with significant visibility
+        if (mostVisibleId !== null && maxRatio > 0.5) {
+          setActiveCardId(mostVisibleId);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "-35% 0px -35% 0px", // Active zone is center 30% of viewport
+        threshold: [0, 0.25, 0.5, 0.75, 1],
+      }
+    );
+
+    // Observe all cards
+    cardRefs.current.forEach((el) => {
+      observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [isMobile, showAll]);
 
   return (
     <section id="talents" className="py-24 px-6 lg:px-12 bg-muted/50">
@@ -44,10 +96,12 @@ const TalentsSection = () => {
               // On mobile: show first 4, fade 5th, hide rest (unless expanded)
               const isMobileHidden = index >= 5 && !showAll;
               const isFadedPreview = index === 4 && !showAll;
+              const isActive = isMobile && activeCardId === talent.id;
               
               return (
                 <div 
                   key={talent.id}
+                  ref={(el) => setCardRef(talent.id, el)}
                   className={`
                     animate-scale-up opacity-0
                     ${isMobileHidden ? 'hidden md:block' : ''}
@@ -64,7 +118,11 @@ const TalentsSection = () => {
                     <img 
                       src={talent.image} 
                       alt={talent.name} 
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className={`
+                        w-full h-full object-cover transition-transform duration-300 ease-out
+                        ${isActive ? 'scale-105' : ''}
+                        md:group-hover:scale-105
+                      `}
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 via-50% to-transparent p-4 pt-24 text-right">
                       <span className="font-display text-secondary font-bold italic text-2xl md:text-3xl">{talent.name}</span>
