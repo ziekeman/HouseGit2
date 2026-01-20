@@ -91,9 +91,9 @@ const Header = () => {
           ref={navRef}
           className="hidden md:flex items-center bg-nav rounded-full px-2 py-2 shadow-sm relative"
         >
-          {/* Sliding Indicator */}
+          {/* Sliding Indicator - Glass effect */}
           <span
-            className="absolute bg-white rounded-full transition-all duration-300 ease-out h-[calc(100%-16px)] top-2"
+            className="absolute bg-white/70 backdrop-blur-sm rounded-full transition-all duration-300 ease-out h-[calc(100%-16px)] top-2 shadow-sm border border-white/50"
             style={{
               width: indicatorStyle.width,
               left: indicatorStyle.left,
