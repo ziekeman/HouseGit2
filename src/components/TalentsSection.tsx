@@ -62,7 +62,7 @@ const TalentsSection = () => {
       },
       {
         root: null,
-        rootMargin: "-35% 0px -35% 0px", // Active zone is center 30% of viewport
+        rootMargin: "-20% 0px -20% 0px", // Active zone is center 60% of viewport
         threshold: [0, 0.25, 0.5, 0.75, 1],
       }
     );
@@ -91,7 +91,7 @@ const TalentsSection = () => {
         </AnimatedSection>
         
         <AnimatedSection animation="fade-in" threshold={0.05}>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-6">
             {talents.map((talent, index) => {
               // On mobile: show first 4, fade 5th, hide rest (unless expanded)
               const isMobileHidden = index >= 5 && !showAll;
