@@ -154,3 +154,7 @@
   animation: scroll-left-seamless 20s linear infinite;
   will-change: transform;
 }
+
+.animate-scroll-left:hover {
+  animation-play-state: paused;
+}
