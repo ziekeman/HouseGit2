@@ -11,7 +11,7 @@ const ContactSection = () => {
             {/* Column 1 - Logo */}
             <AnimatedSection animation="fade-in" delay={0}>
               <div className="flex flex-col items-start">
-                <img src={logoWhite} alt="House of Engagement" className="h-[62px] w-auto" />
+                <img src={logoWhite} alt="House of Engagement" className="h-[77px] w-auto" />
               </div>
             </AnimatedSection>
 
