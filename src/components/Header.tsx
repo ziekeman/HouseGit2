@@ -22,21 +22,45 @@ const Header = () => {
   const navRef = useRef<HTMLElement>(null);
   const buttonRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const isScrollingRef = useRef(false);
+  const ratiosRef = useRef<Record<string, number>>({});
 
+  // IntersectionObserver to track which section is most visible
   useEffect(() => {
+    // Initialize ratios
+    navItems.forEach((item) => {
+      ratiosRef.current[item.id] = 0;
+    });
+
+    // Generate threshold array for smooth ratio updates (0, 0.05, 0.10, ..., 1.0)
+    const thresholds = Array.from({ length: 21 }, (_, i) => i * 0.05);
+
     const observer = new IntersectionObserver(
       (entries) => {
-        if (isScrollingRef.current) return;
-        
+        // Update ratios for all observed entries
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
+          ratiosRef.current[entry.target.id] = entry.intersectionRatio;
+        });
+
+        // Skip if user clicked a nav link (lock active during scroll animation)
+        if (isScrollingRef.current) return;
+
+        // Find the section with the highest visibility
+        let bestId = navItems[0].id;
+        let bestRatio = 0;
+
+        navItems.forEach((item) => {
+          const ratio = ratiosRef.current[item.id] || 0;
+          if (ratio > bestRatio) {
+            bestRatio = ratio;
+            bestId = item.id;
           }
         });
+
+        setActiveSection(bestId);
       },
-      { 
-        threshold: 0.4,
-        rootMargin: "-80px 0px -40% 0px"
+      {
+        threshold: thresholds,
+        rootMargin: "-80px 0px 0px 0px", // Only account for fixed header
       }
     );
 
