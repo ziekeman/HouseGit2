@@ -6,7 +6,7 @@ import talentJordan from "@/assets/talents/talent-jordan.jpg";
 import talentNimo from "@/assets/talents/talent-nimo.jpg";
 import talentPape from "@/assets/talents/talent-pape.jpg";
 import talentGynamo from "@/assets/talents/talent-gynamo.png";
-import talentTabitha from "@/assets/talents/talent-tabitha.png";
+import talentMahi from "@/assets/talents/talent-mahi.jpeg";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useIsMobile } from "@/hooks/use-mobile";
 
