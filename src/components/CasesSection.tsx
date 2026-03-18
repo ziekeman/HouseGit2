@@ -59,7 +59,7 @@ const CasesSection = () => {
             className="font-body text-lg lg:text-xl text-foreground max-w-3xl mx-auto mb-16 animate-fade-up opacity-0"
             style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}
           >
-            Bij House of Engagement staat talent altijd voorop. Wij geloven dat sterke samenwerkingen beginnen bij de juiste match, daarom zetten we identiteit, persoonlijkheid en culturele relevantie van creators en artiesten centraal.
+            Wij ontwikkelen strategische samenwerkingen en begeleiden talent in groei en positionering. Van online impact tot offline relevantie - altijd met engagement als kern.
           </p>
         </AnimatedSection>
         
