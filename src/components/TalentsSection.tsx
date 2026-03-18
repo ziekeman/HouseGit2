@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import talent1 from "@/assets/talents/talent-1.png";
 import talent2 from "@/assets/talents/talent-2.png";
-import talent3 from "@/assets/talents/talent-3.png";
+import talent3 from "@/assets/talents/talent-ashi-new.jpeg";
 import talentJordan from "@/assets/talents/talent-jordan.jpg";
 import talentNimo from "@/assets/talents/talent-nimo.jpg";
 import talentPape from "@/assets/talents/talent-pape.jpg";
