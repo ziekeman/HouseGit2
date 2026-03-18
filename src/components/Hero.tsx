@@ -107,14 +107,11 @@ const Hero = () => {
           {/* Text Content */}
           <div className="order-first lg:order-first flex flex-col justify-center lg:pt-16">
             {/* Main Headline */}
-            <h1 className="font-agrandir text-5xl sm:text-6xl lg:text-7xl font-extrabold text-primary leading-[0.9] mb-2 px-[5px] lg:px-0">
+            <h1 className="font-agrandir text-6xl sm:text-7xl lg:text-8xl font-extrabold text-primary leading-[0.9] mb-2 px-[5px] lg:px-0">
               <AnimatedSection animation="fade-up" delay={0}>
-                <span className="block">FROM</span>
+                <span className="block">FROM TALENT</span>
               </AnimatedSection>
               <AnimatedSection animation="fade-up" delay={100}>
-                <span className="block">TALENT</span>
-              </AnimatedSection>
-              <AnimatedSection animation="fade-up" delay={200}>
                 <span className="block">TO IMPACT</span>
               </AnimatedSection>
             </h1>
