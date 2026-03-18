@@ -1,3 +1,4 @@
+import { Instagram } from "lucide-react";
 import logoWhite from "@/assets/logo-white.png";
 
 const ContactSection = () => {
@@ -36,6 +37,17 @@ const ContactSection = () => {
               <ul className="space-y-2">
                 <li><a href="mailto:info@houseofengage.nl" className="text-background/70 text-sm font-body hover:text-background transition-colors">info@houseofengage.nl</a></li>
                 <li><span className="text-background/70 text-sm font-body">Verrijn Stuartweg 3C, 1112 AW Diemen</span></li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/house.of.engagement?igsh=ODVvYTVwdjM5cjJn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-background/70 text-sm font-body hover:text-background transition-colors"
+                  >
+                    <Instagram className="w-4 h-4" />
+                    Instagram
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
