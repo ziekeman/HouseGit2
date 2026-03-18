@@ -91,7 +91,7 @@ const Hero = () => {
           <div className="order-last lg:order-last relative w-full lg:h-[700px] flex items-center justify-center">
             {/* Main Image - Woman with balloons */}
             <AnimatedSection animation="scale-up" delay={200}>
-              <div className="relative w-[85%] lg:w-[520px] aspect-square lg:aspect-[5/6.1] rounded-tl-[4rem] lg:rounded-tl-[6rem] rounded-tr-none rounded-br-none rounded-bl-none overflow-hidden border-4 lg:border-[6px] border-white shadow-lg mx-auto">
+              <div className="relative w-[85%] lg:w-[520px] aspect-square lg:aspect-[5/6.1] rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-lg mx-auto">
                 <img src={heroImage} alt="Hero image" className="w-full h-full object-cover" />
               </div>
             </AnimatedSection>
