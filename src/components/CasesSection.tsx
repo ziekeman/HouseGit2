@@ -47,7 +47,7 @@ const CasesSection = () => {
               ENGAGE,
             </h2>
             <h2 
-              className="font-agrandir text-4xl lg:text-5xl font-extrabold text-primary uppercase leading-[0.85] animate-fade-up opacity-0"
+              className="font-agrandir text-[2.8rem] sm:text-7xl lg:text-8xl font-extrabold text-primary uppercase leading-[0.9] tracking-[-0.08em] animate-fade-up opacity-0"
               style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}
             >
               THRIVE

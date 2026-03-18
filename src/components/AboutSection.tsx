@@ -15,7 +15,7 @@ const AboutSection = () => {
                     <h2 className="font-agrandir text-[2.8rem] sm:text-7xl lg:text-8xl font-extrabold text-[#722D26] uppercase leading-[0.9] tracking-[-0.08em]">
                       LET'S
                     </h2>
-                    <h2 className="font-agrandir text-4xl lg:text-6xl font-extrabold text-[#722D26] uppercase leading-none">
+                    <h2 className="font-agrandir text-[2.8rem] sm:text-7xl lg:text-8xl font-extrabold text-[#722D26] uppercase leading-[0.9] tracking-[-0.08em]">
                       ENGAGE
                     </h2>
                   </div>
