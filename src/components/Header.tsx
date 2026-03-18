@@ -1,6 +1,6 @@
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useState, useEffect, useRef, useCallback } from "react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-new.png";
 import {
   Sheet,
   SheetContent,
