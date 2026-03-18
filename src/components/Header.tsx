@@ -137,7 +137,7 @@ const Header = () => {
         {/* Navigation Pill - Desktop only */}
         <nav 
           ref={navRef}
-          className="hidden md:flex items-center bg-nav rounded-full px-2 py-2 shadow-sm relative"
+          className="hidden md:flex items-center rounded-full px-2 py-2 relative"
         >
           {/* Sliding Indicator - Liquid Glass iOS style */}
           <span
