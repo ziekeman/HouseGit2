@@ -196,7 +196,7 @@ const Header = () => {
             {/* Mobile CTA */}
             <button
               onClick={() => scrollToSection("contact")}
-              className="mt-auto flex items-center justify-center gap-3 bg-[#262626] text-white pl-6 pr-2 py-3 rounded-full font-display text-sm hover:opacity-90 transition-opacity w-full"
+              className="mt-auto flex items-center justify-center gap-3 bg-[#262626] text-white pl-6 pr-2 py-3 rounded-full font-agrandir font-extrabold text-sm hover:opacity-90 transition-opacity w-full"
             >
               Let's engage
               <span className="bg-secondary rounded-full p-2 flex items-center justify-center">
