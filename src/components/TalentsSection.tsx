@@ -7,6 +7,7 @@ import talentNimo from "@/assets/talents/talent-nimo.jpg";
 import talentPape from "@/assets/talents/talent-pape.jpg";
 import talentGynamo from "@/assets/talents/talent-gynamo.png";
 import talentMahi from "@/assets/talents/talent-mahi.jpeg";
+import talentHamza from "@/assets/talents/talent-hamza.jpeg";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -19,6 +20,7 @@ const talents = [
   { id: 6, name: "JORDAN KNOWS", image: talentJordan },
   { id: 7, name: "SIGOURNEY K", image: talent2 },
   { id: 8, name: "P.APE", image: talentPape },
+  { id: 9, name: "HAMZA", image: talentHamza },
 ];
 
 const TalentsSection = () => {
@@ -91,7 +93,7 @@ const TalentsSection = () => {
         </AnimatedSection>
         
         <AnimatedSection animation="fade-in" threshold={0.05}>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-1 md:gap-6">
             {talents.map((talent, index) => {
               // On mobile: show first 4, fade 5th, hide rest (unless expanded)
               const isMobileHidden = index >= 5 && !showAll;
