@@ -79,7 +79,7 @@ const TalentsSection = () => {
     <section id="talents" className="py-24 px-6 lg:px-12 bg-muted/50">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection animation="fade-up">
-          <h2 className="font-display text-5xl lg:text-6xl font-bold italic text-primary mb-8 uppercase text-center">
+          <h2 className="font-agrandir text-4xl lg:text-5xl font-extrabold text-primary mb-8 uppercase text-center">
             Meet Our Talents
           </h2>
         </AnimatedSection>
@@ -125,7 +125,7 @@ const TalentsSection = () => {
                       className="w-full h-full object-cover transition-transform duration-300 ease-out md:group-hover:scale-105"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 via-50% to-transparent p-4 pt-24 text-right">
-                      <span className="font-display text-secondary font-bold italic text-3xl md:text-3xl">{talent.name}</span>
+                      <span className="font-agrandir text-secondary font-extrabold text-3xl md:text-3xl">{talent.name}</span>
                     </div>
                   </div>
                 </div>

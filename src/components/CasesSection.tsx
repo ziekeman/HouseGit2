@@ -35,19 +35,19 @@ const CasesSection = () => {
         <AnimatedSection animation="fade-in" threshold={0.05}>
           <div className="mb-8">
             <h2 
-              className="font-display text-5xl lg:text-6xl font-bold italic text-primary uppercase leading-[0.85] animate-fade-up opacity-0"
+              className="font-agrandir text-4xl lg:text-5xl font-extrabold text-primary uppercase leading-[0.85] animate-fade-up opacity-0"
               style={{ animationDelay: '0ms', animationFillMode: 'forwards' }}
             >
               CREATE,
             </h2>
             <h2 
-              className="font-display text-5xl lg:text-6xl font-bold italic text-primary uppercase leading-[0.85] animate-fade-up opacity-0"
+              className="font-agrandir text-4xl lg:text-5xl font-extrabold text-primary uppercase leading-[0.85] animate-fade-up opacity-0"
               style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}
             >
               ENGAGE,
             </h2>
             <h2 
-              className="font-display text-5xl lg:text-6xl font-bold italic text-primary uppercase leading-[0.85] animate-fade-up opacity-0"
+              className="font-agrandir text-4xl lg:text-5xl font-extrabold text-primary uppercase leading-[0.85] animate-fade-up opacity-0"
               style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}
             >
               THRIVE
@@ -82,7 +82,7 @@ const CasesSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent" />
                   {/* Title text */}
                   <div className="absolute inset-0 flex items-center justify-center px-4">
-                    <h3 className="font-display font-bold italic text-2xl lg:text-3xl text-secondary uppercase leading-tight text-center">
+                    <h3 className="font-agrandir font-extrabold text-2xl lg:text-3xl text-secondary uppercase leading-tight text-center">
                       {caseItem.title}<br />{caseItem.subtitle}
                     </h3>
                   </div>
