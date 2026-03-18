@@ -36,9 +36,6 @@ const AboutSection = () => {
                       info@houseofengage.nl
                     </a>
                     <p className="font-body text-lg">
-                      +31 6 15249291
-                    </p>
-                    <p className="font-body text-lg">
                       Verrijn Stuartweg 3C<br />1112 AW Diemen
                     </p>
                   </div>
