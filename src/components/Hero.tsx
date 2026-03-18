@@ -107,7 +107,7 @@ const Hero = () => {
           {/* Text Content */}
           <div className="order-first lg:order-first flex flex-col justify-center lg:pt-16">
             {/* Main Headline */}
-            <h1 className="font-agrandir text-[2.8rem] sm:text-7xl lg:text-8xl font-extrabold text-primary leading-[0.9] mb-2 px-[5px] lg:px-0">
+            <h1 className="font-agrandir text-[2.8rem] sm:text-7xl lg:text-8xl font-extrabold text-primary leading-[0.9] mb-2 px-[5px] lg:px-0 tracking-[-0.03em]">
               <AnimatedSection animation="fade-up" delay={0}>
                 <span className="block whitespace-nowrap">FROM TALENT</span>
               </AnimatedSection>
