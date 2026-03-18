@@ -125,7 +125,7 @@ const TalentsSection = () => {
                       className="w-full h-full object-cover transition-transform duration-300 ease-out md:group-hover:scale-105"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 via-50% to-transparent p-4 pt-24 text-right">
-                      <span className="font-display text-secondary font-bold italic text-3xl md:text-3xl">{talent.name}</span>
+                      <span className="font-agrandir text-secondary font-extrabold text-3xl md:text-3xl">{talent.name}</span>
                     </div>
                   </div>
                 </div>
