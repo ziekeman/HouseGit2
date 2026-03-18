@@ -134,30 +134,17 @@ const Header = () => {
         {/* Logo - Smaller on mobile */}
         <img src={logo} alt="House of Engagement" className="h-[46px] md:h-20 w-auto" />
 
-        {/* Navigation Pill - Desktop only */}
+        {/* Navigation - Desktop only */}
         <nav 
           ref={navRef}
-          className="hidden md:flex items-center rounded-full px-2 py-2 relative"
+          className="hidden md:flex items-center gap-1 relative"
         >
-          {/* Sliding Indicator - Liquid Glass iOS style */}
-          <span
-            className="absolute rounded-full transition-all duration-500 ease-out h-[calc(100%-16px)] top-2 
-              bg-gradient-to-b from-white/60 via-white/40 to-white/20
-              backdrop-blur-xl
-              shadow-[0_2px_8px_rgba(255,255,255,0.3),inset_0_1px_2px_rgba(255,255,255,0.6),inset_0_-1px_2px_rgba(0,0,0,0.05)]
-              border border-white/40"
-            style={{
-              width: indicatorStyle.width,
-              left: indicatorStyle.left,
-            }}
-          />
-          
           {navItems.map(({ id, label }, index) => (
             <button
               key={id}
               ref={(el) => (buttonRefs.current[index] = el)}
               onClick={() => scrollToSection(id)}
-              className={`relative z-10 px-6 pt-3 pb-2 rounded-full uppercase font-display text-sm tracking-wide transition-colors duration-300 flex items-center justify-center ${
+              className={`relative z-10 px-5 py-2 uppercase font-agrandir text-sm font-extrabold tracking-wide transition-colors duration-300 ${
                 activeSection === id
                   ? "text-primary"
                   : "text-muted-foreground hover:text-primary"
