@@ -92,7 +92,7 @@ const Hero = () => {
             {/* Main Image - Woman with balloons */}
             <AnimatedSection animation="scale-up" delay={200}>
               <div className="relative w-[85%] lg:w-[520px] aspect-square lg:aspect-[5/6.1] rounded-tl-[4rem] lg:rounded-tl-[6rem] rounded-tr-none rounded-br-none rounded-bl-none overflow-hidden border-4 lg:border-[6px] border-white shadow-lg mx-auto">
-                <img src={heroTabitha} alt="Tabitha with balloons" className="w-full h-full object-cover" />
+                <img src={heroImage} alt="Hero image" className="w-full h-full object-cover" />
               </div>
             </AnimatedSection>
 
