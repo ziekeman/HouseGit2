@@ -13,7 +13,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const talents = [
   { id: 1, name: "FRAASIE", image: talent1 },
   { id: 2, name: "NIMO", image: talentNimo },
-  { id: 3, name: "TABITHA", image: talentTabitha },
+  { id: 3, name: "MAHI", image: talentMahi },
   { id: 4, name: "ASHI", image: talent3 },
   { id: 5, name: "GYNAMO", image: talentGynamo },
   { id: 6, name: "JORDAN KNOWS", image: talentJordan },
