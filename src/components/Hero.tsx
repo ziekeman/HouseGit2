@@ -97,8 +97,8 @@ const Hero = () => {
             </AnimatedSection>
 
             {/* Overlay Image - House of Engagement sign */}
-            <AnimatedSection animation="slide-right" delay={400} className="absolute -bottom-1 left-[5px] lg:bottom-28 lg:-left-16">
-              <div className="w-[26px] lg:w-[205px] h-[38px] lg:h-[307px] rounded-[1rem] lg:rounded-[1.5rem] overflow-hidden shadow-lg">
+            <AnimatedSection animation="slide-right" delay={400} className="absolute -bottom-4 left-2 lg:bottom-28 lg:-left-16">
+              <div className="w-[80px] lg:w-[205px] h-[120px] lg:h-[307px] rounded-[0.75rem] lg:rounded-[1.5rem] overflow-hidden shadow-lg">
                 <img src={houseOfEngagementSign} alt="House of Engagement sign" className="w-full h-full object-cover" />
               </div>
             </AnimatedSection>
