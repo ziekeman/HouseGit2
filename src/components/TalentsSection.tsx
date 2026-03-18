@@ -6,14 +6,14 @@ import talentJordan from "@/assets/talents/talent-jordan.jpg";
 import talentNimo from "@/assets/talents/talent-nimo.jpg";
 import talentPape from "@/assets/talents/talent-pape.jpg";
 import talentGynamo from "@/assets/talents/talent-gynamo.png";
-import talentTabitha from "@/assets/talents/talent-tabitha.png";
+import talentMahi from "@/assets/talents/talent-mahi.jpeg";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const talents = [
   { id: 1, name: "FRAASIE", image: talent1 },
   { id: 2, name: "NIMO", image: talentNimo },
-  { id: 3, name: "TABITHA", image: talentTabitha },
+  { id: 3, name: "MAHI", image: talentMahi },
   { id: 4, name: "ASHI", image: talent3 },
   { id: 5, name: "GYNAMO", image: talentGynamo },
   { id: 6, name: "JORDAN KNOWS", image: talentJordan },
