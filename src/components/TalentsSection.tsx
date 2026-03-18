@@ -93,7 +93,7 @@ const TalentsSection = () => {
         </AnimatedSection>
         
         <AnimatedSection animation="fade-in" threshold={0.05}>
-          <div className="<div className="grid grid-cols-1 md:grid-cols-5 gap-1 md:gap-6"> gap-1 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-1 md:gap-6">
             {talents.map((talent, index) => {
               // On mobile: show first 4, fade 5th, hide rest (unless expanded)
               const isMobileHidden = index >= 5 && !showAll;
