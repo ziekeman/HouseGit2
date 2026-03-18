@@ -98,7 +98,7 @@ const Hero = () => {
 
             {/* Overlay Image - House of Engagement sign */}
             <AnimatedSection animation="slide-right" delay={400} className="absolute -bottom-4 left-[5px] lg:bottom-8 lg:-left-16">
-              <div className="w-32 lg:w-64 aspect-square rounded-[1rem] lg:rounded-[1.5rem] overflow-hidden shadow-lg border-4 lg:border-[6px] border-white">
+              <div className="w-32 lg:w-64 aspect-square rounded-[1rem] lg:rounded-[1.5rem] overflow-hidden shadow-lg">
                 <img src={houseOfEngagementSign} alt="House of Engagement sign" className="w-full h-full object-cover" />
               </div>
             </AnimatedSection>
