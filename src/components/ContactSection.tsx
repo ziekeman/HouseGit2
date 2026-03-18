@@ -21,7 +21,7 @@ const ContactSection = () => {
 
             {/* Column 3 - Sections */}
             <div>
-              <h4 className="text-background font-display font-bold text-sm mb-3">Sections</h4>
+              <h4 className="text-background font-agrandir font-extrabold text-sm mb-3">Sections</h4>
               <ul className="space-y-2">
                 <li><a href="#about" className="text-background/70 text-sm font-body hover:text-background transition-colors">About</a></li>
                 <li><a href="#talents" className="text-background/70 text-sm font-body hover:text-background transition-colors">Talents</a></li>
@@ -32,7 +32,7 @@ const ContactSection = () => {
 
             {/* Column 4 - Contact */}
             <div>
-              <h4 className="text-background font-display font-bold text-sm mb-3">Contact</h4>
+              <h4 className="text-background font-agrandir font-extrabold text-sm mb-3">Contact</h4>
               <ul className="space-y-2">
                 <li><a href="mailto:hello@houseofengagement.nl" className="text-background/70 text-sm font-body hover:text-background transition-colors">hello@houseofengagement.nl</a></li>
                 <li><span className="text-background/70 text-sm font-body">+31 20 123 4567</span></li>

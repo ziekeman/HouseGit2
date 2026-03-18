@@ -140,7 +140,7 @@ const TalentsSection = () => {
             <div className="flex justify-center mt-6 md:hidden">
               <button
                 onClick={() => setShowAll(true)}
-                className="px-8 py-3 text-base font-display font-bold italic text-secondary bg-foreground border border-foreground rounded-full hover:opacity-90 transition-colors uppercase"
+                className="px-8 py-3 text-base font-agrandir font-extrabold text-secondary bg-foreground border border-foreground rounded-full hover:opacity-90 transition-colors uppercase"
               >
                 Show more
               </button>

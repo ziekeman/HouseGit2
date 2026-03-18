@@ -132,7 +132,7 @@ const Hero = () => {
             <AnimatedSection animation="fade-up" delay={400}>
               <button 
                 onClick={scrollToContact} 
-                className="inline-flex items-center justify-center lg:justify-start gap-3 bg-[#262626] text-white px-6 py-4 rounded-full font-display font-medium text-sm w-full lg:w-fit hover:opacity-90 transition-opacity group"
+                className="inline-flex items-center justify-center lg:justify-start gap-3 bg-[#262626] text-white px-6 py-4 rounded-full font-agrandir font-extrabold text-sm w-full lg:w-fit hover:opacity-90 transition-opacity group"
               >
                 GET IN TOUCH
                 <span className="flex items-center justify-center w-8 h-8 bg-accent rounded-full">
@@ -144,7 +144,7 @@ const Hero = () => {
             {/* Trusted By */}
             <AnimatedSection animation="fade-up" delay={500}>
               <div className="mt-6 lg:mt-10 scale-[0.95] lg:scale-100 origin-center lg:origin-left flex flex-col items-center lg:items-start">
-                <p className="text-sm font-display font-bold italic tracking-wider text-primary mb-4 lg:mb-6">
+                <p className="text-sm font-agrandir font-extrabold tracking-wider text-primary mb-4 lg:mb-6">
                   TRUSTED BY
                 </p>
 {/* Logo Carousel with fade edges */}
