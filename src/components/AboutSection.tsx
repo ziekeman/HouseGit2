@@ -30,16 +30,16 @@ const AboutSection = () => {
                 <AnimatedSection animation="fade-up" delay={300}>
                   <div className="space-y-4 text-[#262626]">
                     <a 
-                      href="mailto:hello@houseofengagement.com" 
+                      href="mailto:info@houseofengage.nl" 
                       className="block font-body text-lg underline hover:opacity-70 transition-opacity"
                     >
-                      hello@houseofengagement.com
+                      info@houseofengage.nl
                     </a>
                     <p className="font-body text-lg">
-                      +31 (0) 20 123 45 67
+                      +31 6 15249291
                     </p>
                     <p className="font-body text-lg">
-                      Amsterdam, The Netherlands
+                      Verrijn Stuartweg 3C<br />1112 AW Diemen
                     </p>
                   </div>
                 </AnimatedSection>
