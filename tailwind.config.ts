@@ -14,8 +14,12 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Agrandir Wide"', 'sans-serif'],
+        display: ['"Agrandir Grand"', 'sans-serif'],
+        'display-wide': ['"Agrandir Wide"', 'sans-serif'],
+        'display-narrow': ['"Agrandir Narrow"', 'sans-serif'],
+        'display-tight': ['"Agrandir Tight"', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
+        agrandir: ['"Agrandir"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
