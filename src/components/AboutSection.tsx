@@ -22,7 +22,7 @@ const AboutSection = () => {
                 </AnimatedSection>
                 
                 <AnimatedSection animation="fade-up" delay={200}>
-                  <p className="font-display text-xl lg:text-2xl font-bold text-[#262626] uppercase">
+                  <p className="font-agrandir font-extrabold text-xl lg:text-2xl text-[#262626] uppercase">
                     Ready to make an impact?
                   </p>
                 </AnimatedSection>
