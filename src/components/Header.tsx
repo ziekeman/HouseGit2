@@ -182,7 +182,7 @@ const Header = () => {
                 <button
                   key={id}
                   onClick={() => scrollToSection(id)}
-                  className={`text-left py-4 px-4 rounded-xl font-display text-lg uppercase tracking-wide transition-colors ${
+                  className={`text-left py-4 px-4 rounded-xl font-agrandir font-extrabold text-lg uppercase tracking-wide transition-colors ${
                     activeSection === id
                       ? "bg-nav text-primary"
                       : "text-muted-foreground hover:bg-nav/50 hover:text-primary"
