@@ -1,3 +1,4 @@
+import { Instagram } from "lucide-react";
 import logoWhite from "@/assets/logo-white.png";
 
 const ContactSection = () => {
