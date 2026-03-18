@@ -8,6 +8,7 @@ import talentPape from "@/assets/talents/talent-pape.jpg";
 import talentGynamo from "@/assets/talents/talent-gynamo.png";
 import talentMahi from "@/assets/talents/talent-mahi.jpeg";
 import talentHamza from "@/assets/talents/talent-hamza.jpeg";
+import talentKeyser from "@/assets/talents/talent-keyser.png";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -21,6 +22,7 @@ const talents = [
   { id: 7, name: "SIGOURNEY K", image: talent2 },
   { id: 8, name: "P.APE", image: talentPape },
   { id: 9, name: "HAMZA\nOTHMAN", image: talentHamza },
+  { id: 10, name: "KEYSER\nSOZE", image: talentKeyser },
 ];
 
 const TalentsSection = () => {
