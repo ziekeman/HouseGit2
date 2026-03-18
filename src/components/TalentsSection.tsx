@@ -20,6 +20,7 @@ const talents = [
   { id: 6, name: "JORDAN KNOWS", image: talentJordan },
   { id: 7, name: "SIGOURNEY K", image: talent2 },
   { id: 8, name: "P.APE", image: talentPape },
+  { id: 9, name: "HAMZA", image: talentHamza },
 ];
 
 const TalentsSection = () => {
