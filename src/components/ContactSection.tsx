@@ -34,9 +34,8 @@ const ContactSection = () => {
             <div>
               <h4 className="text-background font-agrandir font-extrabold text-sm mb-3">Contact</h4>
               <ul className="space-y-2">
-                <li><a href="mailto:hello@houseofengagement.nl" className="text-background/70 text-sm font-body hover:text-background transition-colors">hello@houseofengagement.nl</a></li>
-                <li><span className="text-background/70 text-sm font-body">+31 20 123 4567</span></li>
-                <li><span className="text-background/70 text-sm font-body">Amsterdam, NL</span></li>
+                <li><a href="mailto:info@houseofengage.nl" className="text-background/70 text-sm font-body hover:text-background transition-colors">info@houseofengage.nl</a></li>
+                <li><span className="text-background/70 text-sm font-body">Verrijn Stuartweg 3C, 1112 AW Diemen</span></li>
               </ul>
             </div>
           </div>
