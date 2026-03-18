@@ -35,7 +35,7 @@ const CasesSection = () => {
         <AnimatedSection animation="fade-in" threshold={0.05}>
           <div className="mb-8">
             <h2 
-              className="font-display text-5xl lg:text-6xl font-bold italic text-primary uppercase leading-[0.85] animate-fade-up opacity-0"
+              className="font-agrandir text-4xl lg:text-5xl font-extrabold text-primary uppercase leading-[0.85] animate-fade-up opacity-0"
               style={{ animationDelay: '0ms', animationFillMode: 'forwards' }}
             >
               CREATE,
