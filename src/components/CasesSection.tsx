@@ -86,7 +86,7 @@ const CasesSection = () => {
                       {caseItem.title}<br />{caseItem.subtitle}
                     </h3>
                   </div>
-                  <span className="absolute bottom-4 left-4 bg-foreground text-secondary font-display font-bold italic text-sm px-4 py-2 rounded-full uppercase">
+                  <span className="absolute bottom-4 left-4 bg-foreground text-secondary font-agrandir font-extrabold text-sm px-4 py-2 rounded-full uppercase">
                     {caseItem.category}
                   </span>
                 </div>

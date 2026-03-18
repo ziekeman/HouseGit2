@@ -69,7 +69,7 @@ const AboutSection = () => {
                   />
                 </AnimatedSection>
                 <AnimatedSection animation="fade-up" delay={500}>
-                  <button className="inline-flex items-center gap-3 bg-[#262626] text-white px-8 py-4 rounded-full font-display font-bold text-base uppercase hover:opacity-90 transition-opacity group">
+                  <button className="inline-flex items-center gap-3 bg-[#262626] text-white px-8 py-4 rounded-full font-agrandir font-extrabold text-base uppercase hover:opacity-90 transition-opacity group">
                     Send Message
                     <span className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center">
                       <ArrowRight className="w-4 h-4 text-[#262626] group-hover:translate-x-0.5 transition-transform" />
