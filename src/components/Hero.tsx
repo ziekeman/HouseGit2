@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import houseOfEngagementSign from "@/assets/house-of-engagement-sign.png";
-import heroTabitha from "@/assets/hero-tabitha.png";
+import heroImage from "@/assets/hero-new.jpeg";
 import AnimatedSection from "@/components/AnimatedSection";
 
 // Logo imports
