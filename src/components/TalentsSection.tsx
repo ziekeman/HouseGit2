@@ -79,7 +79,7 @@ const TalentsSection = () => {
     <section id="talents" className="py-24 px-6 lg:px-12 bg-muted/50">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection animation="fade-up">
-          <h2 className="font-agrandir text-[2.8rem] sm:text-7xl lg:text-8xl leading-[0.9] tracking-[-0.08em] font-extrabold text-primary mb-8 uppercase text-center">
+          <h2 className="font-agrandir text-[2.2rem] sm:text-6xl lg:text-7xl leading-[0.9] tracking-[-0.08em] font-extrabold text-primary mb-8 uppercase text-center">
             Meet Our<br />Talents
           </h2>
         </AnimatedSection>
