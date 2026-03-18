@@ -18,10 +18,10 @@ const talents = [
   { id: 3, name: "MAHI", image: talentMahi },
   { id: 4, name: "ASHI", image: talent3 },
   { id: 5, name: "GYNAMO", image: talentGynamo },
-  { id: 6, name: "JORDAN KNOWS", image: talentJordan },
+  { id: 6, name: "HAMZA\nOTHMAN", image: talentHamza },
   { id: 7, name: "SIGOURNEY K", image: talent2 },
   { id: 8, name: "P.APE", image: talentPape },
-  { id: 9, name: "HAMZA\nOTHMAN", image: talentHamza },
+  { id: 9, name: "JORDAN KNOWS", image: talentJordan },
   { id: 10, name: "KEYSER\nSOZE", image: talentKeyser },
 ];
 
