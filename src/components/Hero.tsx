@@ -107,7 +107,7 @@ const Hero = () => {
           {/* Text Content */}
           <div className="order-first lg:order-first flex flex-col justify-center lg:pt-16">
             {/* Main Headline */}
-            <h1 className="font-agrandir text-5xl sm:text-6xl lg:text-7xl font-bold text-primary leading-[0.9] mb-2 px-[5px] lg:px-0">
+            <h1 className="font-agrandir text-5xl sm:text-6xl lg:text-7xl font-extrabold text-primary leading-[0.9] mb-2 px-[5px] lg:px-0">
               <AnimatedSection animation="fade-up" delay={0}>
                 <span className="block">FROM</span>
               </AnimatedSection>
