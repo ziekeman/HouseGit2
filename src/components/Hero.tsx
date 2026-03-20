@@ -17,7 +17,7 @@ const logos = [
   { src: logoKnvb, alt: "KNVB" },
   { src: logoMercedes, alt: "Mercedes-Benz" },
   { src: logoOdido, alt: "Odido" },
-  { src: logoPuma, alt: "Puma" },
+  { src: logoBolcom, alt: "bol.com" },
   { src: logoUnderArmour, alt: "Under Armour" },
 ];
 
