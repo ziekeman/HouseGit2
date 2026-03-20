@@ -6,18 +6,18 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 // Logo imports
 import logoNewYorkPizza from "@/assets/logos/logo-new-york-pizza.png";
-import logoVideoland from "@/assets/logos/logo-videoland.png";
+import logoRedbull from "@/assets/logos/logo-redbull.png";
 import logoMercedes from "@/assets/logos/logo-mercedes.png";
-import logoBacardi from "@/assets/logos/logo-bacardi.png";
-import logoKnvb from "@/assets/logos/logo-knvb.png";
+import logoOdido from "@/assets/logos/logo-odido.png";
+import logoPuma from "@/assets/logos/logo-puma.png";
 import logoUnderArmour from "@/assets/logos/logo-under-armour.png";
 
 const logos = [
   { src: logoNewYorkPizza, alt: "New York Pizza" },
-  { src: logoVideoland, alt: "Videoland" },
+  { src: logoRedbull, alt: "Red Bull" },
   { src: logoMercedes, alt: "Mercedes-Benz" },
-  { src: logoBacardi, alt: "Bacardi" },
-  { src: logoKnvb, alt: "KNVB" },
+  { src: logoOdido, alt: "Odido" },
+  { src: logoPuma, alt: "Puma" },
   { src: logoUnderArmour, alt: "Under Armour" },
 ];
 
