@@ -8,6 +8,12 @@ import brand7 from "@/assets/brands/brand-7.png";
 import brand8 from "@/assets/brands/brand-8.png";
 import brand9 from "@/assets/brands/brand-9.png";
 import brand10 from "@/assets/brands/brand-10.png";
+import brand11 from "@/assets/brands/brand-11.png";
+import brand12 from "@/assets/brands/brand-12.png";
+import brand13 from "@/assets/brands/brand-13.png";
+import brand14 from "@/assets/brands/brand-14.png";
+import brand15 from "@/assets/brands/brand-15.png";
+import brand16 from "@/assets/brands/brand-16.png";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const brands = [
@@ -21,21 +27,32 @@ const brands = [
   { id: 8, image: brand8, name: "Brand 8" },
   { id: 9, image: brand9, name: "Brand 9" },
   { id: 10, image: brand10, name: "Brand 10" },
+  { id: 11, image: brand11, name: "Katja" },
+  { id: 12, image: brand12, name: "G-Shock" },
+  { id: 13, image: brand13, name: "Timberland" },
+  { id: 14, image: brand14, name: "Mysteryland" },
+  { id: 15, image: brand15, name: "Puma" },
+  { id: 16, image: brand16, name: "PlayStation" },
 ];
 
 // Asymmetrical grid layout definitions
-// Each item gets a grid area on desktop for visual variety
 const gridClasses = [
-  "col-span-1 row-span-1",                          // 1
-  "col-span-1 md:col-span-2 row-span-1",            // 2 - wide
-  "col-span-1 row-span-1",                          // 3
-  "col-span-1 row-span-1",                          // 4
-  "col-span-1 row-span-1",                          // 5
-  "col-span-1 md:col-span-2 row-span-1",            // 6 - wide
-  "col-span-1 row-span-1",                          // 7
-  "col-span-1 md:col-span-2 row-span-1",            // 8 - wide
-  "col-span-1 row-span-1",                          // 9
-  "col-span-1 row-span-1",                          // 10
+  "col-span-1 row-span-1",
+  "col-span-1 md:col-span-2 row-span-1",
+  "col-span-1 row-span-1",
+  "col-span-1 row-span-1",
+  "col-span-1 row-span-1",
+  "col-span-1 md:col-span-2 row-span-1",
+  "col-span-1 row-span-1",
+  "col-span-1 md:col-span-2 row-span-1",
+  "col-span-1 row-span-1",
+  "col-span-1 row-span-1",
+  "col-span-1 row-span-1",
+  "col-span-1 md:col-span-2 row-span-1",
+  "col-span-1 row-span-1",
+  "col-span-1 row-span-1",
+  "col-span-1 md:col-span-2 row-span-1",
+  "col-span-1 row-span-1",
 ];
 
 const BrandsSection = () => {
