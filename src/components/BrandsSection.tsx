@@ -35,25 +35,6 @@ const brands = [
   { id: 16, image: brand16, name: "PlayStation" },
 ];
 
-// Asymmetrical grid layout definitions
-const gridClasses = [
-  "col-span-1 row-span-1",
-  "col-span-1 md:col-span-2 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-1 md:col-span-2 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-1 md:col-span-2 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-1 md:col-span-2 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-1 md:col-span-2 row-span-1",
-  "col-span-1 row-span-1",
-];
 
 const BrandsSection = () => {
   return (
@@ -66,14 +47,11 @@ const BrandsSection = () => {
         </AnimatedSection>
 
         <AnimatedSection animation="fade-in" threshold={0.05}>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-4">
             {brands.map((brand, index) => (
               <div
                 key={brand.id}
-                className={`
-                  ${gridClasses[index]}
-                  animate-scale-up opacity-0
-                `}
+                className="animate-scale-up opacity-0"
                 style={{
                   animationDelay: `${150 + index * 80}ms`,
                   animationFillMode: "forwards",
