@@ -14,7 +14,7 @@ import logoUnderArmour from "@/assets/logos/logo-under-armour.png";
 
 const logos = [
   { src: logoNewYorkPizza, alt: "New York Pizza" },
-  { src: logoRedbull, alt: "Red Bull" },
+  { src: logoKnvb, alt: "KNVB" },
   { src: logoMercedes, alt: "Mercedes-Benz" },
   { src: logoOdido, alt: "Odido" },
   { src: logoPuma, alt: "Puma" },
