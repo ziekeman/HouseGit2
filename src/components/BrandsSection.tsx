@@ -57,7 +57,7 @@ const BrandsSection = () => {
                   animationFillMode: "forwards",
                 }}
               >
-                <div className="relative bg-muted/60 rounded-2xl p-6 md:p-8 flex items-center justify-center h-full min-h-[120px] md:min-h-[140px] group cursor-pointer transition-all duration-300 hover:bg-muted hover:shadow-lg hover:-translate-y-1 active:scale-[0.97]">
+                <div className="relative bg-muted/60 rounded-2xl p-3 md:p-4 flex items-center justify-center h-full min-h-[80px] md:min-h-[100px] group cursor-pointer transition-all duration-300 hover:bg-muted hover:shadow-lg hover:-translate-y-1 active:scale-[0.97]">
                   <img
                     src={brand.image}
                     alt={brand.name}
