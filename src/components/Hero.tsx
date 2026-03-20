@@ -6,7 +6,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 // Logo imports
 import logoNewYorkPizza from "@/assets/logos/logo-new-york-pizza.png";
-import logoRedbull from "@/assets/logos/logo-redbull.png";
+import logoKnvb from "@/assets/logos/logo-knvb.png";
 import logoMercedes from "@/assets/logos/logo-mercedes.png";
 import logoOdido from "@/assets/logos/logo-odido.png";
 import logoPuma from "@/assets/logos/logo-puma.png";
@@ -14,7 +14,7 @@ import logoUnderArmour from "@/assets/logos/logo-under-armour.png";
 
 const logos = [
   { src: logoNewYorkPizza, alt: "New York Pizza" },
-  { src: logoRedbull, alt: "Red Bull" },
+  { src: logoKnvb, alt: "KNVB" },
   { src: logoMercedes, alt: "Mercedes-Benz" },
   { src: logoOdido, alt: "Odido" },
   { src: logoPuma, alt: "Puma" },
