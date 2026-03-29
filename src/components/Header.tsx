@@ -132,7 +132,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 px-4 py-3 md:px-6 md:py-4 lg:px-12 lg:py-6 bg-background/80 backdrop-blur-md">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo - Smaller on mobile */}
-        <img src={logo} alt="House of Engagement" className="h-[46px] md:h-20 w-auto" />
+        <img src={logo} alt="House of Engagement" className="h-[46px] md:h-[60px] w-auto" />
 
         {/* Navigation - Desktop only */}
         <nav 
