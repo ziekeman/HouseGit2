@@ -40,13 +40,6 @@ const CasesSection = () => {
             WORK WE'RE<br />PROUD OF
           </h2>
           
-          {/* Subheadline */}
-          <p 
-            className="font-body text-lg lg:text-xl text-foreground max-w-3xl mx-auto mb-16 animate-fade-up opacity-0"
-            style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}
-          >
-            Wij ontwikkelen strategische samenwerkingen en begeleiden talent in groei en positionering. Van online impact tot offline relevantie - altijd met engagement als kern.
-          </p>
         </AnimatedSection>
         
         {/* Cases grid - single observer triggers all cards */}
