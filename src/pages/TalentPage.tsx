@@ -2,11 +2,16 @@ import { useParams, Link } from "react-router-dom";
 import { talents } from "@/data/talents";
 import { Instagram, Youtube, Music, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import tiktokIcon from "@/assets/tiktok-icon.svg";
+
+const TikTokIcon = ({ size = 18, className = "" }: { size?: number; className?: string }) => (
+  <img src={tiktokIcon} alt="TikTok" width={size} height={size} className={className} />
+);
 
 const platformIcons: Record<string, React.ElementType> = {
   instagram: Instagram,
   youtube: Youtube,
-  tiktok: Music,
+  tiktok: TikTokIcon,
   spotify: Music,
 };
 
