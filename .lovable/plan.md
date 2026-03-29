@@ -1,37 +1,25 @@
 
 
-## Plan: Individual Talent Pages
+## Talent Page: Side-by-Side Layout
 
-### What we're building
-Each talent gets a dedicated page (`/talents/:slug`) with their photo, bio, and social media links. Clicking a talent card on the homepage navigates to their page.
+### Change
+Redesign `src/pages/TalentPage.tsx` from a stacked vertical layout to a two-column layout that fits above the fold.
 
-### Data structure
-Create a centralized talent data file (`src/data/talents.ts`) containing all talent info:
-- `id`, `name`, `slug` (url-friendly), `image`, `bio` (the descriptions you provided), `socials` (array of `{ platform, url }`)
+### Layout
+- **Full viewport height** (`h-screen`) with no scrolling needed
+- **Left column (~45%)**: Talent image, full height, with rounded corners matching site style
+- **Right column (~55%)**: Name heading (font-agrandir, uppercase), bio text, and social media buttons — vertically centered
+- Back button stays fixed top-left
+- Social buttons as a horizontal row below the bio text
+- On mobile: stack vertically with image on top, content below (scrollable)
 
-Social URLs will be placeholder `#` links for now since no actual URLs were provided — easy to fill in later.
+### File changed
+`src/pages/TalentPage.tsx` — complete rewrite of the layout JSX and classes. No other files need changes.
 
-### Files to create/modify
-
-1. **`src/data/talents.ts`** — Central data with all 10 talents including slug, bio text, and social link placeholders (Instagram, YouTube, etc.)
-
-2. **`src/pages/TalentPage.tsx`** — New page component:
-   - Reads `:slug` from URL params
-   - Shows talent image (large, hero-style)
-   - Name heading
-   - Bio paragraphs below
-   - Social media buttons (Instagram, YouTube icons) linking to their URLs
-   - Back button to return to homepage talents section
-   - Matches existing design language (font-agrandir, color scheme)
-
-3. **`src/App.tsx`** — Add route: `<Route path="/talents/:slug" element={<TalentPage />} />`
-
-4. **`src/components/TalentsSection.tsx`** — Wrap each talent card in a `<Link to={/talents/${talent.slug}}>` so clicking navigates to their page. Import talent data from the shared data file instead of defining it locally.
-
-### Design approach
-- Full-width hero image at top (same aspect ratio as cards)
-- Name in large font-agrandir heading
-- Bio text in body font, readable width
-- Row of social media icon buttons at bottom of image or below name
-- Consistent with existing site styling (dark theme, rounded elements)
+### Spacing & style details
+- Outer padding with `p-6` or `p-8`
+- Gap between columns: `gap-8 lg:gap-12`
+- Image: `object-cover`, rounded-2xl, fills left column height
+- Bio text: `text-sm` or `text-base` with `leading-relaxed` to fit longer bios
+- For very long bios, right column gets `overflow-y-auto` to scroll internally while image stays fixed
 
