@@ -44,8 +44,7 @@ export const talents: Talent[] = [
     image: talent1,
     bio: "Fraasie is een Nederlandse producer, songwriter en contentmaker, en onderdeel van het populaire YouTube-collectief Supergaande. Met zijn herkenbare tag en miljoenen streams werkte hij samen met artiesten als Bilal Wahib, Boef en Lijpe, en bouwde hij een sterke positie op binnen de Nederlandse muziek- en contentwereld.\n\nNaast muziek is hij actief als creator, waar hij met formats, humor en storytelling een jong en betrokken publiek bereikt. Hij was onder meer te zien in producties voor HBO Max en NPO Start, waarin entertainment en bereik samenkomen.\n\nMet zijn combinatie van creativiteit, culturele aansluiting en veelzijdigheid beweegt Fraasie moeiteloos tussen muziek, content en merkcampagnes, en is hij een relevante stem binnen de nieuwe generatie makers.",
     socials: [
-      { platform: "instagram", url: "#" },
-      { platform: "youtube", url: "#" },
+      { platform: "instagram", url: "https://www.instagram.com/fraasie" },
     ],
   },
   {
