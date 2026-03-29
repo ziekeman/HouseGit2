@@ -40,7 +40,7 @@ const TalentPage = () => {
   }
 
   return (
-    <div className="h-screen bg-background flex flex-col lg:flex-row overflow-hidden">
+    <div className="h-screen bg-background flex flex-col lg:flex-row overflow-hidden p-4 lg:p-[50px]">
       {/* Back button */}
       <div className="fixed top-6 left-6 z-50">
         <Link to="/#talents">
