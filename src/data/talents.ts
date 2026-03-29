@@ -33,8 +33,7 @@ export const talents: Talent[] = [
     image: talentNimo,
     bio: "Geronimo, ook bekend als Nimo, brak door als content creator en is inmiddels ook actief als acteur in films en series op onder andere Pathé en Videoland. Met zijn natuurlijke en herkenbare stijl ontwikkelt hij daarnaast eigen formats en scoort hij met zijn alter ego Oom Guno, waarmee hij onder meer in de Ziggo Dome stond tijdens een show van rapper Cho. Zijn combinatie van humor en authenticiteit maakt hem breed inzetbaar binnen entertainment.",
     socials: [
-      { platform: "instagram", url: "#" },
-      { platform: "youtube", url: "#" },
+      { platform: "instagram", url: "https://www.instagram.com/geronimocomvalius" },
     ],
   },
   {
