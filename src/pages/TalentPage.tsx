@@ -65,7 +65,7 @@ const TalentPage = () => {
       </div>
 
       {/* Right: Content */}
-      <div className="w-full lg:w-[62%] flex flex-col justify-center px-6 py-8 lg:px-12 lg:py-10 overflow-y-auto">
+      <div className="w-full lg:w-[62%] flex flex-col justify-center px-8 py-8 lg:px-20 lg:py-10 overflow-y-auto">
         <h1 className="font-agrandir text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary uppercase tracking-[-0.04em] mb-6">
           {talent.displayName}
         </h1>
