@@ -55,7 +55,7 @@ const TalentPage = () => {
 
       {/* Left: Image */}
       <div className="w-full lg:w-[38%] h-56 sm:h-72 lg:h-full p-4 lg:p-6 flex-shrink-0 flex items-center">
-        <div className="w-full h-full rounded-2xl overflow-hidden">
+        <div className="w-full h-[75%] rounded-2xl overflow-hidden">
           <img
             src={talent.image}
             alt={talent.displayName}
