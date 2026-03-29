@@ -37,7 +37,7 @@ const CasesSection = () => {
             className="font-agrandir text-[2.8rem] sm:text-7xl lg:text-8xl font-extrabold text-primary uppercase leading-[0.9] tracking-[-0.08em] mb-8 animate-fade-up opacity-0"
             style={{ animationDelay: '0ms', animationFillMode: 'forwards' }}
           >
-            WORK WE'RE PROUD OF
+            WORK WE'RE<br />PROUD OF
           </h2>
           
           {/* Subheadline */}
