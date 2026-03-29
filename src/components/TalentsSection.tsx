@@ -84,7 +84,7 @@ const TalentsSection = () => {
       <div className="max-w-7xl mx-auto">
         <AnimatedSection animation="fade-up">
           <h2 className="font-agrandir text-[2.8rem] sm:text-7xl lg:text-8xl leading-[0.9] tracking-[-0.08em] font-extrabold text-primary mb-8 uppercase text-center">
-            Meet Our<br />Talents
+            MEET OUR TALENTS
           </h2>
         </AnimatedSection>
         
