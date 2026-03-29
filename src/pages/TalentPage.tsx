@@ -54,7 +54,7 @@ const TalentPage = () => {
       </div>
 
       {/* Left: Image */}
-      <div className="w-full lg:w-[45%] h-64 sm:h-80 lg:h-full p-4 lg:p-6 flex-shrink-0">
+      <div className="w-full lg:w-[38%] h-56 sm:h-72 lg:h-full p-4 lg:p-6 flex-shrink-0">
         <div className="w-full h-full rounded-2xl overflow-hidden">
           <img
             src={talent.image}
@@ -65,7 +65,7 @@ const TalentPage = () => {
       </div>
 
       {/* Right: Content */}
-      <div className="w-full lg:w-[55%] flex flex-col justify-center px-6 py-8 lg:px-12 lg:py-10 overflow-y-auto">
+      <div className="w-full lg:w-[62%] flex flex-col justify-center px-6 py-8 lg:px-12 lg:py-10 overflow-y-auto">
         <h1 className="font-agrandir text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary uppercase tracking-[-0.04em] mb-6">
           {talent.displayName}
         </h1>
