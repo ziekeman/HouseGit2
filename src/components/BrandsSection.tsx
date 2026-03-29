@@ -14,6 +14,10 @@ import brand13 from "@/assets/brands/brand-13.png";
 import brand14 from "@/assets/brands/brand-14.png";
 import brand15 from "@/assets/brands/brand-15.png";
 import brand16 from "@/assets/brands/brand-16.png";
+import brand17 from "@/assets/brands/brand-17.png";
+import brand18 from "@/assets/brands/brand-18.png";
+import brand19 from "@/assets/brands/brand-19.png";
+import brand20 from "@/assets/brands/brand-20.png";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const brands = [
@@ -33,6 +37,10 @@ const brands = [
   { id: 14, image: brand14, name: "Mysteryland" },
   { id: 15, image: brand15, name: "Puma" },
   { id: 16, image: brand16, name: "PlayStation" },
+  { id: 17, image: brand17, name: "Red Bull" },
+  { id: 18, image: brand18, name: "Amazon Prime" },
+  { id: 19, image: brand19, name: "Disney+" },
+  { id: 20, image: brand20, name: "JBL" },
 ];
 
 
