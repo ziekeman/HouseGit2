@@ -1,29 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import talent1 from "@/assets/talents/talent-1.png";
-import talent2 from "@/assets/talents/talent-2.png";
-import talent3 from "@/assets/talents/talent-ashi-new.jpeg";
-import talentJordan from "@/assets/talents/talent-jordan.jpg";
-import talentNimo from "@/assets/talents/talent-nimo.jpg";
-import talentPape from "@/assets/talents/talent-pape.jpg";
-import talentGynamo from "@/assets/talents/talent-gynamo.png";
-import talentMahi from "@/assets/talents/talent-mahi.jpeg";
-import talentHamza from "@/assets/talents/talent-hamza.jpeg";
-import talentKeyser from "@/assets/talents/talent-keyser.png";
+import { Link } from "react-router-dom";
+import { talents } from "@/data/talents";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useIsMobile } from "@/hooks/use-mobile";
-
-const talents = [
-  { id: 1, name: "NIMO", image: talentNimo },
-  { id: 2, name: "FRAASIE", image: talent1 },
-  { id: 3, name: "MAHI", image: talentMahi },
-  { id: 4, name: "ASHI", image: talent3 },
-  { id: 5, name: "GYNAMO", image: talentGynamo },
-  { id: 6, name: "HAMZA\nOTHMAN", image: talentHamza },
-  { id: 7, name: "SIGOURNEY K", image: talent2 },
-  { id: 8, name: "P.APE", image: talentPape },
-  { id: 9, name: "JORDAN KNOWS", image: talentJordan },
-  { id: 10, name: "KEYSER\nSOZE", image: talentKeyser },
-];
 
 const TalentsSection = () => {
   const [showAll, setShowAll] = useState(false);
@@ -50,7 +29,6 @@ const TalentsSection = () => {
         let maxRatio = 0;
         let mostVisibleId: number | null = null;
 
-        // Check all current refs to find the most visible card
         cardRefs.current.forEach((el, id) => {
           const entry = entries.find(e => e.target === el);
           if (entry && entry.intersectionRatio > maxRatio) {
@@ -59,19 +37,17 @@ const TalentsSection = () => {
           }
         });
 
-        // Only update if we found a card with significant visibility
         if (mostVisibleId !== null && maxRatio > 0.5) {
           setActiveCardId(mostVisibleId);
         }
       },
       {
         root: null,
-        rootMargin: "-20% 0px -20% 0px", // Active zone is center 60% of viewport
+        rootMargin: "-20% 0px -20% 0px",
         threshold: [0, 0.25, 0.5, 0.75, 1],
       }
     );
 
-    // Observe all cards
     cardRefs.current.forEach((el) => {
       observer.observe(el);
     });
@@ -97,7 +73,6 @@ const TalentsSection = () => {
         <AnimatedSection animation="fade-in" threshold={0.05}>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-1 md:gap-6">
             {talents.map((talent, index) => {
-              // On mobile: show first 4, fade 5th, hide rest (unless expanded)
               const isMobileHidden = index >= 5 && !showAll;
               const isFadedPreview = index === 4 && !showAll;
               const isActive = isMobile && activeCardId === talent.id;
@@ -116,29 +91,30 @@ const TalentsSection = () => {
                     animationFillMode: 'forwards'
                   }}
                 >
-                  <div 
-                    className={`
-                      relative aspect-[3/4] rounded-2xl overflow-hidden group cursor-pointer 
-                      scale-90 md:scale-100 transition-all duration-300
-                      ${isActive ? 'scale-100 -translate-y-2 shadow-xl shadow-black/30' : ''}
-                    `}
-                  >
-                    <img 
-                      src={talent.image} 
-                      alt={talent.name} 
-                      className="w-full h-full object-cover transition-transform duration-300 ease-out md:group-hover:scale-105"
-                    />
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 via-50% to-transparent p-4 pt-24 text-right">
-                      <span className="font-agrandir text-secondary font-extrabold text-3xl md:text-3xl whitespace-pre-line">{talent.name}</span>
+                  <Link to={`/talents/${talent.slug}`}>
+                    <div 
+                      className={`
+                        relative aspect-[3/4] rounded-2xl overflow-hidden group cursor-pointer 
+                        scale-90 md:scale-100 transition-all duration-300
+                        ${isActive ? 'scale-100 -translate-y-2 shadow-xl shadow-black/30' : ''}
+                      `}
+                    >
+                      <img 
+                        src={talent.image} 
+                        alt={talent.name} 
+                        className="w-full h-full object-cover transition-transform duration-300 ease-out md:group-hover:scale-105"
+                      />
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 via-50% to-transparent p-4 pt-24 text-right">
+                        <span className="font-agrandir text-secondary font-extrabold text-3xl md:text-3xl whitespace-pre-line">{talent.name}</span>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               );
             })}
           </div>
         </AnimatedSection>
 
-        {/* Show more button - mobile only */}
         {!showAll && (
           <AnimatedSection animation="fade-in" delay={600}>
             <div className="flex justify-center mt-6 md:hidden">
