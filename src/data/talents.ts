@@ -6,7 +6,6 @@ import talentNimo from "@/assets/talents/talent-nimo.jpg";
 import talentPape from "@/assets/talents/talent-pape.jpg";
 import talentGynamo from "@/assets/talents/talent-gynamo.png";
 import talentMahi from "@/assets/talents/talent-mahi.jpeg";
-import talentHamza from "@/assets/talents/talent-hamza.jpeg";
 import talentKeyser from "@/assets/talents/talent-keyser.png";
 
 export interface TalentSocial {
@@ -78,17 +77,6 @@ export const talents: Talent[] = [
     bio: "Gino is een content creator en streamer die gaming en sport combineert met energie, humor en directe interactie. Live streaming vormt een belangrijk onderdeel, maar hij richt zich daarnaast steeds meer op longform content, zoals YouTube-video's, waarin hij formats verder uitbouwt. Met deze mix van live en video bouwt hij aan een betrokken en loyale community.",
     socials: [
       { platform: "tiktok", url: "https://www.tiktok.com/gynamo_" },
-    ],
-  },
-  {
-    id: 6,
-    name: "HAMZA\nOTHMAN",
-    displayName: "Hamza Othman",
-    slug: "hamza-othman",
-    image: talentHamza,
-    bio: "Hamza Othman is een Nederlandse acteur die zich heeft ontwikkeld tot een veelzijdige naam in film en televisie. Hij brak door met zijn rol als Ilyas in GTST en volgde dat op met projecten zoals H3L, Sihame, Costa!!, Zina, Ferry 2 en recent Wraak, waarmee hij een Gouden Film-status behaalde. Hamza kiest bewust rollen die bij hem passen, waardoor zijn groei als acteur authentiek en gelaagd aanvoelt. Zijn rustige maar overtuigende presence maakt hem een opvallende en betrouwbare kracht op het scherm.",
-    socials: [
-      { platform: "instagram", url: "https://www.instagram.com/hamzaothman_" },
     ],
   },
   {
