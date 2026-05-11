@@ -1,7 +1,6 @@
 import talent1 from "@/assets/talents/talent-1.png";
 import talent2 from "@/assets/talents/talent-2.png";
 import talent3 from "@/assets/talents/talent-ashi-new.jpeg";
-import talentJordan from "@/assets/talents/talent-jordan.jpg";
 import talentNimo from "@/assets/talents/talent-nimo.jpg";
 import talentPape from "@/assets/talents/talent-pape.jpg";
 import talentGynamo from "@/assets/talents/talent-gynamo.png";
@@ -99,17 +98,6 @@ export const talents: Talent[] = [
     bio: "p.APE is een Nederlandse producer bekend om zijn melodische, warme en toegankelijke sound. Hij werkt nauw samen met artiesten zoals ADF Samski, Milolaathetlukken, Kaya Imani en Ronnie Flex, en draagt met zijn producties bij aan het karakter en de sfeer van hun muziek. Zijn stijl combineert muzikaliteit en ritme met een moderne, relevante sound, waarmee hij zich stap voor stap als een herkenbare en betrouwbare producer binnen de Nederlandse scene profileert.",
     socials: [
       { platform: "instagram", url: "https://www.instagram.com/longlivepape" },
-    ],
-  },
-  {
-    id: 9,
-    name: "JORDAN KNOWS",
-    displayName: "Jordan Knows",
-    slug: "jordan-knows",
-    image: talentJordan,
-    bio: "Jordan Knows is een Nederlandse producer en songwriter die zich ontwikkelde tot een vaste naam binnen de urban scene. Na zijn opleiding aan de Herman Brood Academie brak hij door met producties voor artiesten als Leafs, Mula B, Yssi SB en Dopebwoy, en werkte hij ook mee aan muziek van Lil Kleine.\n\nZijn sound is melodisch, modern en internationaal georiënteerd, met een sterke focus op sfeer en samenwerking met de artiest. Met een groeiend aantal succesvolle releases en samenwerkingen bouwt hij aan een veelzijdige en herkenbare positie binnen de scene, zowel in Nederland als daarbuiten.",
-    socials: [
-      { platform: "instagram", url: "https://www.instagram.com/jordanknowss" },
     ],
   },
   {
