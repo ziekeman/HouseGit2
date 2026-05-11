@@ -71,10 +71,10 @@ const TalentsSection = () => {
         </AnimatedSection>
         
         <AnimatedSection animation="fade-in" threshold={0.05}>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-1 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-6">
             {talents.map((talent, index) => {
-              const isMobileHidden = index >= 5 && !showAll;
-              const isFadedPreview = index === 4 && !showAll;
+              const isMobileHidden = index >= 4 && !showAll;
+              const isFadedPreview = index === 3 && !showAll;
               const isActive = isMobile && activeCardId === talent.id;
               
               return (
