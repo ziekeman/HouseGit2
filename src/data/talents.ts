@@ -57,17 +57,6 @@ export const talents: Talent[] = [
     ],
   },
   {
-    id: 4,
-    name: "ASHI",
-    displayName: "Ashi",
-    slug: "ashi",
-    image: talent3,
-    bio: "Ashi is een creatieve maker en singer-songwriter die zich beweegt tussen muziek, events en content. Hij begon als MC en host op binnen- en buitenlandse events, organiseerde eigen clubnachten in Amsterdam met gasten als Central Cee en Travis Scott, en bracht eigen muziek uit, waaronder de tracks Bali en Antoni Antoni. Daarnaast schreef hij mee aan hits zoals Tout Est Bon van Boef en Numidia. Tegenwoordig richt Ashi zich vooral op contentcreatie, waarin humor, observatie en persoonlijkheid centraal staan, en bouwt hij aan een herkenbare online presence.",
-    socials: [
-      { platform: "tiktok", url: "https://www.tiktok.com/ashiworldwide" },
-    ],
-  },
-  {
     id: 5,
     name: "GYNAMO",
     displayName: "Gino (Gynamo)",
@@ -98,6 +87,17 @@ export const talents: Talent[] = [
     bio: "p.APE is een Nederlandse producer bekend om zijn melodische, warme en toegankelijke sound. Hij werkt nauw samen met artiesten zoals ADF Samski, Milolaathetlukken, Kaya Imani en Ronnie Flex, en draagt met zijn producties bij aan het karakter en de sfeer van hun muziek. Zijn stijl combineert muzikaliteit en ritme met een moderne, relevante sound, waarmee hij zich stap voor stap als een herkenbare en betrouwbare producer binnen de Nederlandse scene profileert.",
     socials: [
       { platform: "instagram", url: "https://www.instagram.com/longlivepape" },
+    ],
+  },
+  {
+    id: 4,
+    name: "ASHI",
+    displayName: "Ashi",
+    slug: "ashi",
+    image: talent3,
+    bio: "Ashi is een creatieve maker en singer-songwriter die zich beweegt tussen muziek, events en content. Hij begon als MC en host op binnen- en buitenlandse events, organiseerde eigen clubnachten in Amsterdam met gasten als Central Cee en Travis Scott, en bracht eigen muziek uit, waaronder de tracks Bali en Antoni Antoni. Daarnaast schreef hij mee aan hits zoals Tout Est Bon van Boef en Numidia. Tegenwoordig richt Ashi zich vooral op contentcreatie, waarin humor, observatie en persoonlijkheid centraal staan, en bouwt hij aan een herkenbare online presence.",
+    socials: [
+      { platform: "tiktok", url: "https://www.tiktok.com/ashiworldwide" },
     ],
   },
   {
